@@ -2,19 +2,22 @@
 # GERADOR DE MANIFESTO V1
 # =========================
 
-$FerramentasPath = "E:\BARRA PESADA\FERRAMENTAS"
-$DocsPath = "E:\BARRA PESADA\DOCUMENTACAO"
+$ROOT = Split-Path -Parent $PSScriptRoot
 
-$SaidaPath = "E:\BARRA PESADA\manifest_temp.json"
+$FerramentasPath = Join-Path $ROOT "FERRAMENTAS"
+$DocsPath = Join-Path $ROOT "DOCUMENTACAO"
+
+# Salvando o manifesto na pasta correta
+$SaidaPath = Join-Path $ROOT "MANIFESTO\manifest_temp.json"
 
 # Verifica se as pastas existem
 if (!(Test-Path $FerramentasPath)) {
-    Write-Host "[ERRO] Pasta de ferramentas não encontrada."
+    Write-Host "[ERRO] Pasta de ferramentas não encontrada: $FerramentasPath"
     exit
 }
 
 if (!(Test-Path $DocsPath)) {
-    Write-Host "[ERRO] Pasta de documentação não encontrada."
+    Write-Host "[ERRO] Pasta de documentação não encontrada: $DocsPath"
     exit
 }
 
@@ -31,7 +34,7 @@ foreach ($arquivo in $arquivos) {
     # Remove caracteres especiais do ID
     $id = ($arquivo.BaseName -replace '[^a-zA-Z0-9]', '').ToLower()
 
-    # Procura markdown parecido
+    # Procura markdown correspondente
     $docEncontrada = Get-ChildItem $DocsPath -Filter "*.md" |
         Where-Object {
             ($_.BaseName -replace '[^a-zA-Z0-9]', '').ToLower() -like "*$id*"
@@ -50,15 +53,15 @@ foreach ($arquivo in $arquivos) {
 
     # Estrutura do item
     $item = @{
-        id = $id
-        nome = $arquivo.BaseName
-        arquivo = $arquivo.Name
+        id           = $id
+        nome         = $arquivo.BaseName
+        arquivo      = $arquivo.Name
         documentacao = if ($docEncontrada) { $docEncontrada.Name } else { "" }
-        sha256 = $hashFinal
-        aliases = @()
-        categoria = ""
-        tipo = @()
-        sistema = @()
+        sha256       = $hashFinal
+        aliases      = @()
+        categoria    = ""
+        tipo         = @()
+        sistema      = @()
     }
 
     $manifesto.ferramentas += $item
