@@ -1,5 +1,5 @@
 # BARRA PESADA — Índice Geral
-# Versão 1.1
+# Versão 1.2
 
 ## Objetivo
 Toolkit portátil para:
@@ -55,6 +55,30 @@ Toolkit portátil para:
 - CCleaner `[Windows]`
 - TronScript `[Windows]`
 - WinUtil `[Windows]`
+
+---
+
+## Sistema / Linux
+- Htop `[Linux]`
+- Btop++ `[Linux]`
+- Nvtop `[Linux]`
+- CPU-X `[Linux]`
+- Hardinfo2 `[Linux]`
+- LM-Sensors `[Linux]`
+- Smartmontools `[Linux]`
+- Iotop `[Linux]`
+- Powertop `[Linux]`
+- GDU `[Linux]`
+- Ncdu `[Linux]`
+- Tmux `[Linux]`
+- Inxi `[Linux]`
+- Journalctl `[Linux]`
+- Dmesg `[Linux]`
+- Stacer `[Linux]`
+- Mission Center `[Linux]`
+- Netdata `[Linux]`
+- LazyDocker `[Linux]`
+- Timeshift `[Linux]`
 
 ---
 
@@ -132,9 +156,11 @@ Toolkit portátil para:
 
 ---
 
-## Desenvolvimento / GPU
+## Desenvolvimento
 - CUDA Toolkit `[Windows / Linux]`
 - Git `[Windows / Linux]`
+- DBeaver Community `[Windows / Linux]`
+- Insomnia `[Windows / Linux]`
 
 ---
 
@@ -181,6 +207,12 @@ Usar com cautela:
 - Categoria de programas do pendrive.txt
 - Comandos_PowerShell_CMD.txt
 - Linux (Diretório/Pasta)
+
+---
+
+## Documentação por ferramenta
+- `Autoruns.md` — análise de persistência no Windows
+- `GUIA_DE_MONITORAMENTO.md` — monitoramento e diagnóstico no Linux
 
 ---
 
