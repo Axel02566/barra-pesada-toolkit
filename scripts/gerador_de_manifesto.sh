@@ -7,19 +7,36 @@
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 ROOT="$(dirname "$SCRIPT_DIR")"
 
-# Define caminhos
-FERRAMENTAS_PATH="$ROOT/ferramentas"
-DOCS_PATH="$ROOT/documentacao"
-SAIDA_PATH="$ROOT/manifesto/manifest_temp.json"
+# Caminhos — tolerante a variações de nome e maiúsculas/minúsculas
+FERRAMENTAS_PATH="$(find "$ROOT" -maxdepth 1 -type d | grep -i "ferramentas\|tools" | head -1)"
+DOCS_PATH="$(find "$ROOT" -maxdepth 1 -type d | grep -i "personal_doc\|documentacao\|docs" | head -1)"
+MANIFESTO_DIR="$(find "$ROOT" -maxdepth 1 -type d | grep -i "manifest" | head -1)"
+SAIDA_PATH="$MANIFESTO_DIR/manifest_temp.json"
 
-# Verifica se as pastas existem
-if [ ! -d "$FERRAMENTAS_PATH" ]; then
-    echo "[ERRO] Pasta de ferramentas não encontrada: $FERRAMENTAS_PATH"
+# Verificações de segurança antes de qualquer escrita
+if [ -z "$FERRAMENTAS_PATH" ]; then
+    echo "[ERRO] Pasta de ferramentas não encontrada em: $ROOT"
     exit 1
 fi
 
-if [ ! -d "$DOCS_PATH" ]; then
-    echo "[ERRO] Pasta de documentação não encontrada: $DOCS_PATH"
+if [ -z "$DOCS_PATH" ]; then
+    echo "[ERRO] Pasta de documentação não encontrada em: $ROOT"
+    exit 1
+fi
+
+if [ -z "$MANIFESTO_DIR" ]; then
+    echo "[ERRO] Pasta de manifesto não encontrada em: $ROOT"
+    exit 1
+fi
+
+echo "Ferramentas: $FERRAMENTAS_PATH"
+echo "Documentação: $DOCS_PATH"
+echo "Saída: $SAIDA_PATH"
+echo ""
+
+# Verifica se jq está instalado
+if ! command -v jq &>/dev/null; then
+    echo "[ERRO] jq não encontrado. Instale com: sudo apt install jq"
     exit 1
 fi
 
@@ -34,7 +51,7 @@ while IFS= read -r arquivo; do
 
     echo "Processando: $nome_arquivo"
 
-    # Gera ID limpo — remove tudo que não for letra ou número, converte para minúsculas
+    # Gera ID limpo
     id="$(echo "$base" | tr -cd '[:alnum:]' | tr '[:upper:]' '[:lower:]')"
 
     # Procura markdown correspondente por similaridade de nome
@@ -42,14 +59,13 @@ while IFS= read -r arquivo; do
     while IFS= read -r md; do
         md_base="$(basename "$md")"
         md_id="$(echo "${md_base%.*}" | tr -cd '[:alnum:]' | tr '[:upper:]' '[:lower:]')"
-
         if echo "$md_id" | grep -qi "$id"; then
             doc_encontrada="$md_base"
             break
         fi
     done < <(find "$DOCS_PATH" -maxdepth 1 -type f -name "*.md" | sort)
 
-    # Gera hash SHA256 com proteção contra erro
+    # Gera hash SHA256
     if hash_raw="$(sha256sum "$arquivo" 2>/dev/null)"; then
         hash_final="$(echo "$hash_raw" | awk '{print $1}' | tr '[:lower:]' '[:upper:]')"
     else
@@ -83,5 +99,5 @@ done < <(find "$FERRAMENTAS_PATH" -maxdepth 1 -type f | sort)
 echo "$manifesto" | jq '.' > "$SAIDA_PATH"
 
 echo ""
-echo "Manifesto gerado com sucesso:"
-echo "$SAIDA_PATH"
+echo "Manifesto gerado com sucesso."
+echo "Arquivo salvo em: $SAIDA_PATH"

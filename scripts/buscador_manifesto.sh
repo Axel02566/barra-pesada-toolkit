@@ -8,7 +8,7 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 ROOT="$(dirname "$SCRIPT_DIR")"
 
 # Define caminho do manifesto
-MANIFESTO="$ROOT/manifesto/manifest_temp.json"
+MANIFESTO="$ROOT/manifest/manifest_temp.json"
 
 # Verifica se o manifesto existe
 if [ ! -f "$MANIFESTO" ]; then

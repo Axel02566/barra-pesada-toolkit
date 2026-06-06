@@ -1,0 +1,1291 @@
+{
+  "ferramentas": [
+    {
+      "id": "hwinfo",
+      "nome": "HWiNFO",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "hardware_benchmark",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "hwmonitor",
+      "nome": "HWMonitor",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "hardware_benchmark",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "cpuz",
+      "nome": "CPU-Z",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "hardware_benchmark",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "crystaldiskinfo",
+      "nome": "CrystalDiskInfo",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "hardware_benchmark",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "crystaldiskmark",
+      "nome": "CrystalDiskMark",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "hardware_benchmark",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "crystalmarkretro",
+      "nome": "CrystalMark Retro",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "hardware_benchmark",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "furmark",
+      "nome": "FurMark",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "hardware_benchmark",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "prime95",
+      "nome": "Prime95",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "hardware_benchmark",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "memtest86",
+      "nome": "MemTest86",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "hardware_benchmark",
+      "tipo": [],
+      "sistema": [
+        "bootavel"
+      ]
+    },
+    {
+      "id": "hcimemtest",
+      "nome": "HCI MemTest",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "hardware_benchmark",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "testmem5",
+      "nome": "TestMem5",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "hardware_benchmark",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "throttlestop",
+      "nome": "ThrottleStop",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "hardware_benchmark",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "universalx86tuningutility",
+      "nome": "Universal x86 Tuning Utility",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "hardware_benchmark",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "hardinfo2",
+      "nome": "Hardinfo2",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "hardware_benchmark",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "gsmartcontrol",
+      "nome": "GSmartControl",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "hardware_benchmark",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "h2testw",
+      "nome": "h2testw",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "hardware_benchmark",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "lact",
+      "nome": "LACT",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "hardware_benchmark",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "rtss",
+      "nome": "RTSS",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "hardware_benchmark",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "mangohud",
+      "nome": "MangoHud",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "hardware_benchmark",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "goverlay",
+      "nome": "GOverlay",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "hardware_benchmark",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "autoruns",
+      "nome": "Autoruns",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_windows",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "processexplorer",
+      "nome": "Process Explorer",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_windows",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "processmonitor",
+      "nome": "Process Monitor",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_windows",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "sysinternalssuite",
+      "nome": "Sysinternals Suite",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_windows",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "systeminformer",
+      "nome": "System Informer",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_windows",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "oosu10",
+      "nome": "OOSU10",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_windows",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "configuredefender",
+      "nome": "ConfigureDefender",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_windows",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "bloatynosy",
+      "nome": "BloatyNosy",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_windows",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "powertoys",
+      "nome": "PowerToys",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_windows",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "bleachbit",
+      "nome": "BleachBit",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_windows",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "ccleaner",
+      "nome": "CCleaner",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_windows",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "tronscript",
+      "nome": "TronScript",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_windows",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "winutil",
+      "nome": "WinUtil",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_windows",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "htop",
+      "nome": "Htop",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_linux",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "btop",
+      "nome": "Btop++",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_linux",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "nvtop",
+      "nome": "Nvtop",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_linux",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "cpux",
+      "nome": "CPU-X",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_linux",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "hardinfo2",
+      "nome": "Hardinfo2",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_linux",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "lmsensors",
+      "nome": "LM-Sensors",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_linux",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "smartmontools",
+      "nome": "Smartmontools",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_linux",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "iotop",
+      "nome": "Iotop",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_linux",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "powertop",
+      "nome": "Powertop",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_linux",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "gdu",
+      "nome": "GDU",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_linux",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "ncdu",
+      "nome": "Ncdu",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_linux",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "tmux",
+      "nome": "Tmux",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_linux",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "inxi",
+      "nome": "Inxi",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_linux",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "journalctl",
+      "nome": "Journalctl",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_linux",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "dmesg",
+      "nome": "Dmesg",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_linux",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "stacer",
+      "nome": "Stacer",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_linux",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "missioncenter",
+      "nome": "Mission Center",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_linux",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "netdata",
+      "nome": "Netdata",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_linux",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "lazydocker",
+      "nome": "LazyDocker",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_linux",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "timeshift",
+      "nome": "Timeshift",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "sistema_linux",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "ventoy",
+      "nome": "Ventoy",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "recuperacao_backup",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "rufus",
+      "nome": "Rufus",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "recuperacao_backup",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "testdisk",
+      "nome": "TestDisk",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "recuperacao_backup",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "recuva",
+      "nome": "Recuva",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "recuperacao_backup",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "partrecoverytoolkit",
+      "nome": "PartRecoveryToolkit",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "recuperacao_backup",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "eraser",
+      "nome": "Eraser",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "recuperacao_backup",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "veracrypt",
+      "nome": "VeraCrypt",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "recuperacao_backup",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "winrar",
+      "nome": "WinRAR",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "recuperacao_backup",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "7zip",
+      "nome": "7-Zip",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "recuperacao_backup",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "rarlinux",
+      "nome": "rarlinux",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "recuperacao_backup",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "angryipscanner",
+      "nome": "Angry IP Scanner",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "rede_infraestrutura",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "wireshark",
+      "nome": "Wireshark",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "rede_infraestrutura",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "nmap",
+      "nome": "Nmap",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "rede_infraestrutura",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "radminvpn",
+      "nome": "Radmin VPN",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "rede_infraestrutura",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "ghidra",
+      "nome": "Ghidra",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "reverse_engineering",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "x64dbg",
+      "nome": "x64dbg",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "reverse_engineering",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "dependencywalker",
+      "nome": "Dependency Walker",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "reverse_engineering",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "detectiteasy",
+      "nome": "Detect It Easy",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "reverse_engineering",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "pebear",
+      "nome": "PE-bear",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "reverse_engineering",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "hxd",
+      "nome": "HxD",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "reverse_engineering",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "objdump",
+      "nome": "objDump",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "reverse_engineering",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "gdb",
+      "nome": "gdb",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "reverse_engineering",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "nasm",
+      "nome": "nasm",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "reverse_engineering",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "volatility3",
+      "nome": "volatility3",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "reverse_engineering",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "metasploit",
+      "nome": "Metasploit",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "seguranca_pentest",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "burpsuite",
+      "nome": "Burp Suite",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "seguranca_pentest",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "owaspzap",
+      "nome": "OWASP ZAP",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "seguranca_pentest",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "beef",
+      "nome": "BeEF",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "seguranca_pentest",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "hashcat",
+      "nome": "Hashcat",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "seguranca_pentest",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "johntheripper",
+      "nome": "John the Ripper",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "seguranca_pentest",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "sherlock",
+      "nome": "Sherlock",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "seguranca_pentest",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "lynis",
+      "nome": "Lynis",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "seguranca_pentest",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "rkhunter",
+      "nome": "rkhunter",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "seguranca_pentest",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "rockyoutxt",
+      "nome": "rockyou.txt",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "seguranca_pentest",
+      "tipo": [],
+      "sistema": [
+        "recurso"
+      ]
+    },
+    {
+      "id": "virtualbox",
+      "nome": "VirtualBox",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "virtualizacao",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "projectnomad",
+      "nome": "Project N.O.M.A.D.",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "laboratorio_offline",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "bitwarden",
+      "nome": "Bitwarden",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "criptografia_senhas",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "keepassxc",
+      "nome": "KeePassXC",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "criptografia_senhas",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "dupeguru",
+      "nome": "dupeGuru",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "organizacao_utilidades",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "geekuninstaller",
+      "nome": "Geek Uninstaller",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "organizacao_utilidades",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "memwipe",
+      "nome": "MemWipe",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "organizacao_utilidades",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "vlc",
+      "nome": "VLC",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "organizacao_utilidades",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "cudatoolkit",
+      "nome": "CUDA Toolkit",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "desenvolvimento",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "git",
+      "nome": "Git",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "desenvolvimento",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "dbeavercommunity",
+      "nome": "DBeaver Community",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "desenvolvimento",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "insomnia",
+      "nome": "Insomnia",
+      "arquivo": "",
+      "documentacao": "",
+      "sha256": "",
+      "aliases": [],
+      "categoria": "desenvolvimento",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    }
+  ]
+}
