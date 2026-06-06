@@ -20,6 +20,13 @@ BARRA_PESADA/
 ├── ferramentas/
 │   │
 │   ├── windows/
+│   │   └── Atalhos do Windows
+|   |       ├── Event Viewer
+|   |       ├── services.msc
+|   |       ├── gpedit.msc
+|   |       ├── msconfig
+|   |       ├── Resource Monitor
+|   |       └── etc...
 │   ├── linux/
 │   ├── bootaveis/
 │   ├── portable/
@@ -35,31 +42,22 @@ BARRA_PESADA/
 │
 ├── saude_dos_arquivos/
 │   │
-│   ├── hashes_sha256.txt
-│   ├── verificar_hashes.ps1
-│   ├── gerar_hashes.ps1
-│   ├── verificar_hashes.bat
-│   └── gerar_hashes.bat
+│   └── hashes_sha256.txt
 │
 ├── scripts/
 │   │
 │   ├── executar_tudo.ps1
 │   ├── executar_tudo.bat
+│   ├── executar_tudo.sh
 │   ├── gerar_manifesto.ps1
 │   ├── gerar_manifesto.bat
+│   ├── gerar_manifesto.sh
 │   ├── verificar_manifesto.ps1
 │   ├── verificar_manifesto.bat
+│   ├── verificar_manifesto.sh
 │   ├── gerar_indice.ps1
-│   └── gerar_indice.bat
-│
-├── atalhos_windows/
-│   │
-│   ├── Event Viewer
-│   ├── services.msc
-│   ├── gpedit.msc
-│   ├── msconfig
-│   ├── Resource Monitor
-│   └── etc...
+│   ├── gerar_indice.bat
+│   └── gerar_indice.sh
 │
 ├── arquivos_txt/
 │   │
