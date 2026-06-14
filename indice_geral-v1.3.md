@@ -1,5 +1,5 @@
 # BARRA PESADA — Índice Geral
-# Versão 1.2
+# Versão 1.3
 
 ## Objetivo
 Toolkit portátil para:
@@ -115,6 +115,7 @@ Toolkit portátil para:
 - gdb `[Linux]`
 - nasm `[Windows / Linux]`
 - volatility3 `[Windows / Linux]`
+- Kernel Debug Symbols (dbgsym) `[Linux]`
 
 ---
 
@@ -213,6 +214,7 @@ Usar com cautela:
 ## Documentação por ferramenta
 - `Autoruns.md` — análise de persistência no Windows
 - `GUIA_DE_MONITORAMENTO.md` — monitoramento e diagnóstico no Linux
+- `Dbgsysm.md` — símbolos de depuração do kernel Linux
 
 ---
 
