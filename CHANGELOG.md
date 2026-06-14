@@ -1,6 +1,13 @@
 # CHANGELOG
 
 Registro de alterações do BARRA PESADA — Toolkit.
+## [1.4] — Junho/2026
+ 
+### Adicionado
+- `buscar_manifesto.ps1` e `Buscar_Manifesto.bat` em `scripts/` — equivalentes Windows do buscador interativo
+- `bootstrap_catalogo.ps1` e `Bootstrap_Catalogo.bat` em `scripts/` — equivalentes Windows do bootstrap do catálogo
+
+---
 
 ## [1.3] — Junho/2026
 
