@@ -33,24 +33,60 @@ echo "Documentação: $PASTA_DOCS"
 echo "Hashes: $ARQUIVO_HASH"
 echo ""
 
+# Contadores para o resumo final
+ok=0; alterados=0; faltando=0; invalidos=0
+primeira_linha=1
+
 # Lê e verifica linha por linha
-while IFS= read -r linha; do
+while IFS= read -r linha || [ -n "$linha" ]; do
+
+    # Remove CR de arquivos gerados no Windows — senão o \r entra no hash
+    linha="${linha%$'\r'}"
+
+    # Remove BOM UTF-8 da primeira linha — arquivos gerados por versões
+    # antigas do gerar_hashes.ps1 (Out-File -Encoding UTF8) começam com ele
+    if [ "$primeira_linha" -eq 1 ]; then
+        linha="${linha#$'\xEF\xBB\xBF'}"
+        primeira_linha=0
+    fi
 
     [ -z "$linha" ] && continue
 
-    arquivo="$(echo "$linha" | awk -F ' \| ' '{print $1}')"
-    hash_original="$(echo "$linha" | awk -F ' \| ' '{print $2}')"
+    # Separa nome e hash pelo delimitador " | "
+    # Expansão de parâmetro em vez de awk: nomes de arquivo com espaço
+    # sobrevivem intactos e não há regex para escapar errado
+    arquivo="${linha%% | *}"
+    hash_original="${linha##* | }"
     caminho_completo="$PASTA_DOCS/$arquivo"
+
+    # Linha sem o delimitador esperado — arquivo de hashes corrompido
+    if [ "$arquivo" = "$linha" ]; then
+        echo "[INVÁLIDO] $linha"
+        invalidos=$((invalidos + 1))
+        continue
+    fi
 
     if [ -f "$caminho_completo" ]; then
         hash_atual="$(sha256sum "$caminho_completo" | awk '{print $1}' | tr '[:lower:]' '[:upper:]')"
         if [ "$hash_atual" = "$hash_original" ]; then
             echo "[OK] $arquivo"
+            ok=$((ok + 1))
         else
             echo "[ALTERADO] $arquivo"
+            alterados=$((alterados + 1))
         fi
     else
         echo "[FALTANDO] $arquivo"
+        faltando=$((faltando + 1))
     fi
 
 done < "$ARQUIVO_HASH"
+
+echo ""
+echo "------------------------------"
+echo "OK: $ok | Alterados: $alterados | Faltando: $faltando | Inválidos: $invalidos"
+
+# Sai com erro se algo não bateu — permite encadear em automação
+if [ "$alterados" -gt 0 ] || [ "$faltando" -gt 0 ] || [ "$invalidos" -gt 0 ]; then
+    exit 1
+fi

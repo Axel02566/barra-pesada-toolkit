@@ -4,22 +4,46 @@
 
 $ROOT = Split-Path -Parent $PSScriptRoot
 
-$FerramentasPath = Join-Path $ROOT "FERRAMENTAS"
-$DocsPath = Join-Path $ROOT "DOCUMENTACAO"
+# -------------------------------------------------------
+# LOCALIZAÇÃO DAS PASTAS
+# Tolerante a variações de nome e maiúsculas/minúsculas,
+# igual ao equivalente .sh — não depende de nome fixo
+# -------------------------------------------------------
+$FerramentasPath = Get-ChildItem -Path $ROOT -Depth 0 -Directory |
+    Where-Object { $_.Name -match "ferramentas|tools" } |
+    Select-Object -First 1 -ExpandProperty FullName
 
-# Salvando o manifesto na pasta correta
-$SaidaPath = Join-Path $ROOT "MANIFESTO\manifest_temp.json"
+$DocsPath = Get-ChildItem -Path $ROOT -Depth 0 -Directory |
+    Where-Object { $_.Name -match "personal_doc|documentacao|docs" } |
+    Select-Object -First 1 -ExpandProperty FullName
+
+$ManifestDir = Get-ChildItem -Path $ROOT -Depth 0 -Directory |
+    Where-Object { $_.Name -like "*manifest*" } |
+    Select-Object -First 1 -ExpandProperty FullName
 
 # Verifica se as pastas existem
-if (!(Test-Path $FerramentasPath)) {
-    Write-Host "[ERRO] Pasta de ferramentas não encontrada: $FerramentasPath"
-    exit
+if (-not $FerramentasPath) {
+    Write-Host "[ERRO] Pasta de ferramentas não encontrada em: $ROOT"
+    Write-Host "Esperado: pasta com 'ferramentas' ou 'tools' no nome."
+    exit 1
 }
 
-if (!(Test-Path $DocsPath)) {
-    Write-Host "[ERRO] Pasta de documentação não encontrada: $DocsPath"
-    exit
+if (-not $DocsPath) {
+    Write-Host "[ERRO] Pasta de documentação não encontrada em: $ROOT"
+    exit 1
 }
+
+if (-not $ManifestDir) {
+    Write-Host "[ERRO] Pasta de manifesto não encontrada em: $ROOT"
+    exit 1
+}
+
+$SaidaPath = Join-Path $ManifestDir "manifest_temp.json"
+
+Write-Host "Ferramentas: $FerramentasPath"
+Write-Host "Documentação: $DocsPath"
+Write-Host "Saída: $SaidaPath"
+Write-Host ""
 
 $manifesto = @{
     ferramentas = @()
@@ -67,10 +91,10 @@ foreach ($arquivo in $arquivos) {
     $manifesto.ferramentas += $item
 }
 
-# Salva JSON
-$manifesto |
-    ConvertTo-Json -Depth 5 |
-    Out-File $SaidaPath -Encoding UTF8
+# Salva JSON — UTF8 sem BOM, senão jq e o buscador .sh engasgam no BOM
+$json = $manifesto | ConvertTo-Json -Depth 5
+$utf8SemBom = New-Object System.Text.UTF8Encoding($false)
+[System.IO.File]::WriteAllText($SaidaPath, $json, $utf8SemBom)
 
 Write-Host ""
 Write-Host "Manifesto gerado com sucesso:"

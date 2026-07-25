@@ -7,13 +7,22 @@
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 ROOT="$(dirname "$SCRIPT_DIR")"
 
-# Define caminho do manifesto
-MANIFESTO="$ROOT/manifest/manifest_temp.json"
+# Caminhos — tolerante a variações de nome e maiúsculas/minúsculas
+MANIFESTO_DIR="$(find "$ROOT" -maxdepth 1 -type d | grep -i "manifest" | head -1)"
 
-# Verifica se o manifesto existe
+if [ -z "$MANIFESTO_DIR" ]; then
+    echo "[ERRO] Pasta de manifesto não encontrada em: $ROOT"
+    echo "Esperado: pasta com 'manifest' no nome."
+    exit 1
+fi
+
+# Fonte de verdade é o catálogo curado — mesmo arquivo lido por buscar_manifesto.ps1
+MANIFESTO="$MANIFESTO_DIR/catalogo_manual.json"
+
+# Verifica se o catálogo existe
 if [ ! -f "$MANIFESTO" ]; then
-    echo "[ERRO] Manifesto não encontrado: $MANIFESTO"
-    echo "Execute gerador_de_manifesto.sh primeiro."
+    echo "[ERRO] Catálogo não encontrado: $MANIFESTO"
+    echo "Execute bootstrap_catalogo.sh primeiro."
     exit 1
 fi
 
