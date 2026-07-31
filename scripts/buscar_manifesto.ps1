@@ -50,9 +50,10 @@ Write-Host "  2) Alias"
 Write-Host "  3) Categoria"
 Write-Host "  4) Tipo"
 Write-Host "  5) Sistema"
+Write-Host "  6) Arquivo"
 Write-Host ""
 
-$opcao = Read-Host "Escolha uma opção [1-5]"
+$opcao = Read-Host "Escolha uma opção [1-6]"
 Write-Host ""
 
 # -------------------------------------------------------
@@ -65,6 +66,7 @@ switch ($opcao) {
     "3" { $campo = "categoria" }
     "4" { $campo = "tipo" }
     "5" { $campo = "sistema" }
+    "6" { $campo = "arquivo" }
     default {
         Write-Host "[ERRO] Opção inválida."
         exit 1
@@ -80,10 +82,10 @@ Write-Host ""
 # $_ representa o objeto atual no pipeline — equivalente
 # à variável de loop implícita do Bash
 #
-# Campos de array (aliases, tipo, sistema) precisam de
+# Campos de array (aliases, tipo, sistema, arquivo) precisam de
 # tratamento diferente de campos de string simples
 # -------------------------------------------------------
-if ($campo -in @("aliases", "tipo", "sistema")) {
+if ($campo -in @("aliases", "tipo", "sistema", "arquivo")) {
 
     # Campos que são arrays — verifica se algum elemento contém o termo
     $resultados = $dados.ferramentas | Where-Object {

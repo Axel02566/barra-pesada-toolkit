@@ -3,10 +3,15 @@
     {
       "id": "hwinfo",
       "nome": "HWiNFO",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "hwi64_846.exe"
+      ],
+      "documentacao": "HWiNFO.md",
+      "sha256": "BE2FCE950C9C7395D20AD3AC091563B4B59FCE7BB00908EB354DB8CE0C1DFD32",
+      "aliases": [
+        "hwi64",
+        "hwi32"
+      ],
       "categoria": "hardware_benchmark",
       "tipo": [],
       "sistema": [
@@ -16,10 +21,14 @@
     {
       "id": "hwmonitor",
       "nome": "HWMonitor",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "hwmonitor_1.63.exe"
+      ],
+      "documentacao": "HWMonitor.md",
+      "sha256": "9F0A9BDE0B76F675F6E9A74769D3B41D46CFC83A39B4A5AFE92419860D70B2B8",
+      "aliases": [
+        "hwm"
+      ],
       "categoria": "hardware_benchmark",
       "tipo": [],
       "sistema": [
@@ -29,10 +38,15 @@
     {
       "id": "cpuz",
       "nome": "CPU-Z",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "cpu-z_2.19-en.exe"
+      ],
+      "documentacao": "CPU-Z.md",
+      "sha256": "D2EA34FE7108FE08E83EBFB1A069F42D87FA12306D9480B15B8901BF6710CB18",
+      "aliases": [
+        "cpu-z",
+        "cpuid"
+      ],
       "categoria": "hardware_benchmark",
       "tipo": [],
       "sistema": [
@@ -42,10 +56,15 @@
     {
       "id": "crystaldiskinfo",
       "nome": "CrystalDiskInfo",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "CrystalDiskInfo9_8_0.exe"
+      ],
+      "documentacao": "CrystalDiskInfo.md",
+      "sha256": "63E8B0AE2B60F548273590F6DC4CDDD9253C84EAB8D30998ED09989AC9DDFC12",
+      "aliases": [
+        "cdi",
+        "crystal disk info"
+      ],
       "categoria": "hardware_benchmark",
       "tipo": [],
       "sistema": [
@@ -55,10 +74,15 @@
     {
       "id": "crystaldiskmark",
       "nome": "CrystalDiskMark",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "CrystalDiskMark9_0_2.exe"
+      ],
+      "documentacao": "CrystalDiskMark.md",
+      "sha256": "89F6583AF67A4BF79556E6C66C9E9F19153E21795F249512E7F5690922C6E04C",
+      "aliases": [
+        "cdm",
+        "crystal disk mark"
+      ],
       "categoria": "hardware_benchmark",
       "tipo": [],
       "sistema": [
@@ -68,10 +92,15 @@
     {
       "id": "crystalmarkretro",
       "nome": "CrystalMark Retro",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "CrystalMarkRetro2_1_0.exe"
+      ],
+      "documentacao": "CrystalMark Retro.md",
+      "sha256": "91839F0170244DD7236A67CE1D98515BBF442DB9C3CA1F58BD2300B58AD23B59",
+      "aliases": [
+        "crystalmark",
+        "cmr"
+      ],
       "categoria": "hardware_benchmark",
       "tipo": [],
       "sistema": [
@@ -81,10 +110,15 @@
     {
       "id": "furmark",
       "nome": "FurMark",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "FurMark_2.10.2_Win64_Setup.exe"
+      ],
+      "documentacao": "FurMark.md",
+      "sha256": "960AB335A486EE3EF8F9F4D8893654BD222D10A5BE90AD8587A0B043CBAF6615",
+      "aliases": [
+        "fur mark",
+        "geeks3d"
+      ],
       "categoria": "hardware_benchmark",
       "tipo": [],
       "sistema": [
@@ -94,10 +128,15 @@
     {
       "id": "prime95",
       "nome": "Prime95",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "prime95.zip"
+      ],
+      "documentacao": "Prime95.md",
+      "sha256": "6514B8768B51427DB2ED0733B5C372DE219B767E316E12EC18BEB0AFD15CB3AE",
+      "aliases": [
+        "mprime",
+        "prime 95"
+      ],
       "categoria": "hardware_benchmark",
       "tipo": [],
       "sistema": [
@@ -107,10 +146,16 @@
     {
       "id": "memtest86",
       "nome": "MemTest86",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "memtest86-usb.zip"
+      ],
+      "documentacao": "MemTest86.md",
+      "sha256": "F4A646ABB51A272F846A67438D2CBBF322E7B9055FED699FDC996F62EF3CD878",
+      "aliases": [
+        "mt86",
+        "memtest 86",
+        "passmark memtest86"
+      ],
       "categoria": "hardware_benchmark",
       "tipo": [],
       "sistema": [
@@ -120,10 +165,14 @@
     {
       "id": "hcimemtest",
       "nome": "HCI MemTest",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "MemTest.zip"
+      ],
+      "documentacao": "HCI MemTest.md",
+      "sha256": "0373721FD4D7E511E27FA6DE20796B1292776276B78C37B6A699C5C8A839E03E",
+      "aliases": [
+        "hci memtest"
+      ],
       "categoria": "hardware_benchmark",
       "tipo": [],
       "sistema": [
@@ -133,10 +182,14 @@
     {
       "id": "testmem5",
       "nome": "TestMem5",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "TestMem5.7z"
+      ],
+      "documentacao": "TestMem5.md",
+      "sha256": "0C0840495786AC31FE07FF867C53CABC7313D65DD1E9073D8147557D0DD2B7B7",
+      "aliases": [
+        "tm5"
+      ],
       "categoria": "hardware_benchmark",
       "tipo": [],
       "sistema": [
@@ -146,10 +199,14 @@
     {
       "id": "throttlestop",
       "nome": "ThrottleStop",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "ThrottleStop_9.7.zip"
+      ],
+      "documentacao": "ThrottleStop.md",
+      "sha256": "2F2A57A92224DC8319B1B56A83526B2F330F8DC3402C62C5160BB8B3E1268CA9",
+      "aliases": [
+        "tstop"
+      ],
       "categoria": "hardware_benchmark",
       "tipo": [],
       "sistema": [
@@ -159,10 +216,15 @@
     {
       "id": "universalx86tuningutility",
       "nome": "Universal x86 Tuning Utility",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "Universal.x86.Tuning.Utility.V2.Portable.zip"
+      ],
+      "documentacao": "Universal x86 Tuning Utility.md",
+      "sha256": "603FF7BF7C0EE08919C9C17CED7CF087D8D2C44F05F2A63A510B3AB74EC83CE9",
+      "aliases": [
+        "uxtu",
+        "universal x86 tuning"
+      ],
       "categoria": "hardware_benchmark",
       "tipo": [],
       "sistema": [
@@ -172,10 +234,14 @@
     {
       "id": "hardinfo2",
       "nome": "Hardinfo2",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "hardinfo2_2.2.15-Ubuntu-24.04_amd64.deb"
+      ],
+      "documentacao": "Hardinfo2.md",
+      "sha256": "744F9D3C3618C20546DD51C2411CB38E543C67158FB1F8677BEFD00F41312B36",
+      "aliases": [
+        "hardinfo"
+      ],
       "categoria": "hardware_benchmark",
       "tipo": [],
       "sistema": [
@@ -185,10 +251,14 @@
     {
       "id": "gsmartcontrol",
       "nome": "GSmartControl",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "gsmartcontrol-2.0.2-win64.zip"
+      ],
+      "documentacao": "GSmartControl.md",
+      "sha256": "3B8FCB958F838276A2F7C88A02D748951BDDF8E9B75B2D1F483D6101E34DA2F7",
+      "aliases": [
+        "gsmart"
+      ],
       "categoria": "hardware_benchmark",
       "tipo": [],
       "sistema": [
@@ -198,10 +268,14 @@
     {
       "id": "h2testw",
       "nome": "h2testw",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "h2testw_1.4"
+      ],
+      "documentacao": "h2testw.md",
+      "sha256": "52AB1B49E6F22A51C6BEC2C712840A719D883894D21B3CD79A91B54AC8C7F764",
+      "aliases": [
+        "h2test"
+      ],
       "categoria": "hardware_benchmark",
       "tipo": [],
       "sistema": [
@@ -211,10 +285,15 @@
     {
       "id": "lact",
       "nome": "LACT",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "LACT-master.zip"
+      ],
+      "documentacao": "LACT.md",
+      "sha256": "1C27D1F2016F23079143809AB965BEF2EA8DF3BCD5CFD2452D9354818B28EDC8",
+      "aliases": [
+        "linux amdgpu control",
+        "amdgpu control"
+      ],
       "categoria": "hardware_benchmark",
       "tipo": [],
       "sistema": [
@@ -224,10 +303,15 @@
     {
       "id": "rtss",
       "nome": "RTSS",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "[Guru3D]-RTSSSetup737Build28314.zip"
+      ],
+      "documentacao": "RTSS.md",
+      "sha256": "222F54AD5FBBB1E333AFD44737194B3EDF727185F8223BC3AF027F881945E291",
+      "aliases": [
+        "rivatuner statistics server",
+        "rivatuner"
+      ],
       "categoria": "hardware_benchmark",
       "tipo": [],
       "sistema": [
@@ -237,10 +321,14 @@
     {
       "id": "mangohud",
       "nome": "MangoHud",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "MangoHud-master.zip"
+      ],
+      "documentacao": "MangoHud.md",
+      "sha256": "B7F6064001A7A3CC97E2DC97EF7964EF184B97ACAC760E631EF56AF522E9C04A",
+      "aliases": [
+        "mango hud"
+      ],
       "categoria": "hardware_benchmark",
       "tipo": [],
       "sistema": [
@@ -250,10 +338,14 @@
     {
       "id": "goverlay",
       "nome": "GOverlay",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "goverlay-main.zip"
+      ],
+      "documentacao": "GOverlay.md",
+      "sha256": "7CBC1CC77870AF85ADEE1773ECD4C7976EC60F5C23024E8F9077AA6AB7EF8970",
+      "aliases": [
+        "go overlay"
+      ],
       "categoria": "hardware_benchmark",
       "tipo": [],
       "sistema": [
@@ -263,10 +355,14 @@
     {
       "id": "autoruns",
       "nome": "Autoruns",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "Autoruns.zip"
+      ],
+      "documentacao": "Autoruns.md",
+      "sha256": "3FB79CD80D26333D2E81FE20E152BE7893142B928FF9338AC5D49E914C786252",
+      "aliases": [
+        "sysinternals autoruns"
+      ],
       "categoria": "sistema_windows",
       "tipo": [],
       "sistema": [
@@ -276,10 +372,15 @@
     {
       "id": "processexplorer",
       "nome": "Process Explorer",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "ProcessExplorer.zip"
+      ],
+      "documentacao": "Process Explorer.md",
+      "sha256": "C9FF6197F9890466664288BF575DB7572EE202091B3E90F786B3206B245A3332",
+      "aliases": [
+        "procexp",
+        "sysinternals process explorer"
+      ],
       "categoria": "sistema_windows",
       "tipo": [],
       "sistema": [
@@ -289,10 +390,15 @@
     {
       "id": "processmonitor",
       "nome": "Process Monitor",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "ProcessMonitor.zip"
+      ],
+      "documentacao": "Process Monitor.md",
+      "sha256": "C7C24D9759FBD833CFE84F338F00F6B4DA6AB95A83227B093B678CE60CE08699",
+      "aliases": [
+        "procmon",
+        "sysinternals process monitor"
+      ],
       "categoria": "sistema_windows",
       "tipo": [],
       "sistema": [
@@ -302,10 +408,15 @@
     {
       "id": "sysinternalssuite",
       "nome": "Sysinternals Suite",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "SysinternalsSuite.zip"
+      ],
+      "documentacao": "Sysinternals Suite.md",
+      "sha256": "12829A2D4E47E3E5ECD84DBE9675F775C6E98A87B11F5EEC73C0F6FA2459F3A1",
+      "aliases": [
+        "sysinternals",
+        "sysinternals suite"
+      ],
       "categoria": "sistema_windows",
       "tipo": [],
       "sistema": [
@@ -315,10 +426,14 @@
     {
       "id": "systeminformer",
       "nome": "System Informer",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "systeminformer-3.2.25011-release-setup.exe"
+      ],
+      "documentacao": "System Informer.md",
+      "sha256": "D812EDA63924F75BDFA2567D3D4395A7E04862B79712E643A49B7B83EC895DB1",
+      "aliases": [
+        "process hacker"
+      ],
       "categoria": "sistema_windows",
       "tipo": [],
       "sistema": [
@@ -328,10 +443,15 @@
     {
       "id": "oosu10",
       "nome": "OOSU10",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "OOSU10.exe"
+      ],
+      "documentacao": "OOSU10.md",
+      "sha256": "97A30E3AAA41671947D47C0D95E4B23AB2CEBABFF1CE9FCC7E8B98F01C4C6A5C",
+      "aliases": [
+        "o&o shutup10",
+        "ooshutup10"
+      ],
       "categoria": "sistema_windows",
       "tipo": [],
       "sistema": [
@@ -341,10 +461,15 @@
     {
       "id": "configuredefender",
       "nome": "ConfigureDefender",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "ConfigureDefender-master.zip"
+      ],
+      "documentacao": "ConfigureDefender.md",
+      "sha256": "B7ACE122386FFB4B1049E4B5C1CABB5FA770BC254A1544B39033F7916C3B8EB6",
+      "aliases": [
+        "config defender",
+        "windows defender config"
+      ],
       "categoria": "sistema_windows",
       "tipo": [],
       "sistema": [
@@ -354,10 +479,14 @@
     {
       "id": "bloatynosy",
       "nome": "BloatyNosy",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "Bloatynosy.zip"
+      ],
+      "documentacao": "BloatyNosy.md",
+      "sha256": "8512CDCD81F5EBEF9DB0B38EFB20E200F903F936B28638DF45E465F1CDEEB5FD",
+      "aliases": [
+        "bloaty nosy"
+      ],
       "categoria": "sistema_windows",
       "tipo": [],
       "sistema": [
@@ -367,10 +496,15 @@
     {
       "id": "powertoys",
       "nome": "PowerToys",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "PowerToysSetup-0.99.1-x64.exe"
+      ],
+      "documentacao": "PowerToys.md",
+      "sha256": "A8F5BE7E0E2B7BE82E355B101E533822239616EA90F2254295366293AA226F07",
+      "aliases": [
+        "microsoft powertoys",
+        "ms powertoys"
+      ],
       "categoria": "sistema_windows",
       "tipo": [],
       "sistema": [
@@ -380,10 +514,14 @@
     {
       "id": "bleachbit",
       "nome": "BleachBit",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "BleachBit-5.0.2-setup.exe"
+      ],
+      "documentacao": "BleachBit.md",
+      "sha256": "6EF999775C016463A25A371291F1EC982A6122C89D500E625169A09C25A91A25",
+      "aliases": [
+        "bleach bit"
+      ],
       "categoria": "sistema_windows",
       "tipo": [],
       "sistema": [
@@ -393,10 +531,14 @@
     {
       "id": "ccleaner",
       "nome": "CCleaner",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "ccsetup_online_setup.exe"
+      ],
+      "documentacao": "CCleaner.md",
+      "sha256": "1784AB3AA02C0F1D3FD4D0EE7E710F217C1C1816ECC17F8BC0E8720DAA8DC74F",
+      "aliases": [
+        "crap cleaner"
+      ],
       "categoria": "sistema_windows",
       "tipo": [],
       "sistema": [
@@ -406,10 +548,15 @@
     {
       "id": "tronscript",
       "nome": "TronScript",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "Tron v12.0.8 (2025-01-09).exe"
+      ],
+      "documentacao": "TronScript.md",
+      "sha256": "16917A0CC153908AC1C2939E4459A588502A63B474CFCC2EAADB800914D753DB",
+      "aliases": [
+        "tron script",
+        "tron"
+      ],
       "categoria": "sistema_windows",
       "tipo": [],
       "sistema": [
@@ -419,10 +566,15 @@
     {
       "id": "winutil",
       "nome": "WinUtil",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "winutil-main.zip"
+      ],
+      "documentacao": "WinUtil.md",
+      "sha256": "7381986701261461C5D5AC8B67BC018FFE16D9682087B4A1EE93524A040F615E",
+      "aliases": [
+        "chris titus winutil",
+        "ctt winutil"
+      ],
       "categoria": "sistema_windows",
       "tipo": [],
       "sistema": [
@@ -432,12 +584,14 @@
     {
       "id": "htop",
       "nome": "Htop",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
+      "arquivo": [],
+      "documentacao": "GUIA_DE_MONITORAMENTO.md",
+      "sha256": "CAB8F6B94249EB9D8EE4A6069E254697C3FED1177E1D63C13484FDBFF3EE58E4",
       "aliases": [],
       "categoria": "sistema_linux",
-      "tipo": [],
+      "tipo": [
+        "tui"
+      ],
       "sistema": [
         "linux"
       ]
@@ -445,12 +599,16 @@
     {
       "id": "btop",
       "nome": "Btop++",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [],
+      "documentacao": "GUIA_DE_MONITORAMENTO.md",
+      "sha256": "CAB8F6B94249EB9D8EE4A6069E254697C3FED1177E1D63C13484FDBFF3EE58E4",
+      "aliases": [
+        "btop++"
+      ],
       "categoria": "sistema_linux",
-      "tipo": [],
+      "tipo": [
+        "tui"
+      ],
       "sistema": [
         "linux"
       ]
@@ -458,12 +616,14 @@
     {
       "id": "nvtop",
       "nome": "Nvtop",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
+      "arquivo": [],
+      "documentacao": "GUIA_DE_MONITORAMENTO.md",
+      "sha256": "CAB8F6B94249EB9D8EE4A6069E254697C3FED1177E1D63C13484FDBFF3EE58E4",
       "aliases": [],
       "categoria": "sistema_linux",
-      "tipo": [],
+      "tipo": [
+        "tui"
+      ],
       "sistema": [
         "linux"
       ]
@@ -471,12 +631,16 @@
     {
       "id": "cpux",
       "nome": "CPU-X",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [],
+      "documentacao": "GUIA_DE_MONITORAMENTO.md",
+      "sha256": "CAB8F6B94249EB9D8EE4A6069E254697C3FED1177E1D63C13484FDBFF3EE58E4",
+      "aliases": [
+        "cpu-x"
+      ],
       "categoria": "sistema_linux",
-      "tipo": [],
+      "tipo": [
+        "gui"
+      ],
       "sistema": [
         "linux"
       ]
@@ -484,10 +648,14 @@
     {
       "id": "hardinfo2",
       "nome": "Hardinfo2",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "hardinfo2_2.2.15-Ubuntu-24.04_amd64.deb"
+      ],
+      "documentacao": "Hardinfo2.md",
+      "sha256": "744F9D3C3618C20546DD51C2411CB38E543C67158FB1F8677BEFD00F41312B36",
+      "aliases": [
+        "hardinfo"
+      ],
       "categoria": "sistema_linux",
       "tipo": [],
       "sistema": [
@@ -497,12 +665,17 @@
     {
       "id": "lmsensors",
       "nome": "LM-Sensors",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [],
+      "documentacao": "GUIA_DE_MONITORAMENTO.md",
+      "sha256": "CAB8F6B94249EB9D8EE4A6069E254697C3FED1177E1D63C13484FDBFF3EE58E4",
+      "aliases": [
+        "sensors",
+        "lm sensors"
+      ],
       "categoria": "sistema_linux",
-      "tipo": [],
+      "tipo": [
+        "terminal"
+      ],
       "sistema": [
         "linux"
       ]
@@ -510,12 +683,16 @@
     {
       "id": "smartmontools",
       "nome": "Smartmontools",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [],
+      "documentacao": "GUIA_DE_MONITORAMENTO.md",
+      "sha256": "CAB8F6B94249EB9D8EE4A6069E254697C3FED1177E1D63C13484FDBFF3EE58E4",
+      "aliases": [
+        "smartctl"
+      ],
       "categoria": "sistema_linux",
-      "tipo": [],
+      "tipo": [
+        "terminal"
+      ],
       "sistema": [
         "linux"
       ]
@@ -523,12 +700,14 @@
     {
       "id": "iotop",
       "nome": "Iotop",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
+      "arquivo": [],
+      "documentacao": "GUIA_DE_MONITORAMENTO.md",
+      "sha256": "CAB8F6B94249EB9D8EE4A6069E254697C3FED1177E1D63C13484FDBFF3EE58E4",
       "aliases": [],
       "categoria": "sistema_linux",
-      "tipo": [],
+      "tipo": [
+        "terminal"
+      ],
       "sistema": [
         "linux"
       ]
@@ -536,12 +715,16 @@
     {
       "id": "powertop",
       "nome": "Powertop",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [],
+      "documentacao": "GUIA_DE_MONITORAMENTO.md",
+      "sha256": "CAB8F6B94249EB9D8EE4A6069E254697C3FED1177E1D63C13484FDBFF3EE58E4",
+      "aliases": [
+        "power top"
+      ],
       "categoria": "sistema_linux",
-      "tipo": [],
+      "tipo": [
+        "terminal"
+      ],
       "sistema": [
         "linux"
       ]
@@ -549,12 +732,16 @@
     {
       "id": "gdu",
       "nome": "GDU",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [],
+      "documentacao": "GUIA_DE_MONITORAMENTO.md",
+      "sha256": "CAB8F6B94249EB9D8EE4A6069E254697C3FED1177E1D63C13484FDBFF3EE58E4",
+      "aliases": [
+        "go du"
+      ],
       "categoria": "sistema_linux",
-      "tipo": [],
+      "tipo": [
+        "terminal"
+      ],
       "sistema": [
         "linux"
       ]
@@ -562,12 +749,16 @@
     {
       "id": "ncdu",
       "nome": "Ncdu",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [],
+      "documentacao": "GUIA_DE_MONITORAMENTO.md",
+      "sha256": "CAB8F6B94249EB9D8EE4A6069E254697C3FED1177E1D63C13484FDBFF3EE58E4",
+      "aliases": [
+        "ncurses disk usage"
+      ],
       "categoria": "sistema_linux",
-      "tipo": [],
+      "tipo": [
+        "terminal"
+      ],
       "sistema": [
         "linux"
       ]
@@ -575,12 +766,16 @@
     {
       "id": "tmux",
       "nome": "Tmux",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [],
+      "documentacao": "GUIA_DE_MONITORAMENTO.md",
+      "sha256": "CAB8F6B94249EB9D8EE4A6069E254697C3FED1177E1D63C13484FDBFF3EE58E4",
+      "aliases": [
+        "terminal multiplexer"
+      ],
       "categoria": "sistema_linux",
-      "tipo": [],
+      "tipo": [
+        "terminal"
+      ],
       "sistema": [
         "linux"
       ]
@@ -588,12 +783,14 @@
     {
       "id": "inxi",
       "nome": "Inxi",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
+      "arquivo": [],
+      "documentacao": "GUIA_DE_MONITORAMENTO.md",
+      "sha256": "CAB8F6B94249EB9D8EE4A6069E254697C3FED1177E1D63C13484FDBFF3EE58E4",
       "aliases": [],
       "categoria": "sistema_linux",
-      "tipo": [],
+      "tipo": [
+        "terminal"
+      ],
       "sistema": [
         "linux"
       ]
@@ -601,12 +798,14 @@
     {
       "id": "journalctl",
       "nome": "Journalctl",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
+      "arquivo": [],
+      "documentacao": "GUIA_DE_MONITORAMENTO.md",
+      "sha256": "CAB8F6B94249EB9D8EE4A6069E254697C3FED1177E1D63C13484FDBFF3EE58E4",
       "aliases": [],
       "categoria": "sistema_linux",
-      "tipo": [],
+      "tipo": [
+        "terminal"
+      ],
       "sistema": [
         "linux"
       ]
@@ -614,12 +813,14 @@
     {
       "id": "dmesg",
       "nome": "Dmesg",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
+      "arquivo": [],
+      "documentacao": "GUIA_DE_MONITORAMENTO.md",
+      "sha256": "CAB8F6B94249EB9D8EE4A6069E254697C3FED1177E1D63C13484FDBFF3EE58E4",
       "aliases": [],
       "categoria": "sistema_linux",
-      "tipo": [],
+      "tipo": [
+        "terminal"
+      ],
       "sistema": [
         "linux"
       ]
@@ -627,12 +828,14 @@
     {
       "id": "stacer",
       "nome": "Stacer",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
+      "arquivo": [],
+      "documentacao": "GUIA_DE_MONITORAMENTO.md",
+      "sha256": "CAB8F6B94249EB9D8EE4A6069E254697C3FED1177E1D63C13484FDBFF3EE58E4",
       "aliases": [],
       "categoria": "sistema_linux",
-      "tipo": [],
+      "tipo": [
+        "gui"
+      ],
       "sistema": [
         "linux"
       ]
@@ -640,12 +843,16 @@
     {
       "id": "missioncenter",
       "nome": "Mission Center",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [],
+      "documentacao": "GUIA_DE_MONITORAMENTO.md",
+      "sha256": "CAB8F6B94249EB9D8EE4A6069E254697C3FED1177E1D63C13484FDBFF3EE58E4",
+      "aliases": [
+        "mission center"
+      ],
       "categoria": "sistema_linux",
-      "tipo": [],
+      "tipo": [
+        "gui"
+      ],
       "sistema": [
         "linux"
       ]
@@ -653,12 +860,14 @@
     {
       "id": "netdata",
       "nome": "Netdata",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
+      "arquivo": [],
+      "documentacao": "GUIA_DE_MONITORAMENTO.md",
+      "sha256": "CAB8F6B94249EB9D8EE4A6069E254697C3FED1177E1D63C13484FDBFF3EE58E4",
       "aliases": [],
       "categoria": "sistema_linux",
-      "tipo": [],
+      "tipo": [
+        "dashboard_web"
+      ],
       "sistema": [
         "linux"
       ]
@@ -666,12 +875,16 @@
     {
       "id": "lazydocker",
       "nome": "LazyDocker",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [],
+      "documentacao": "GUIA_DE_MONITORAMENTO.md",
+      "sha256": "CAB8F6B94249EB9D8EE4A6069E254697C3FED1177E1D63C13484FDBFF3EE58E4",
+      "aliases": [
+        "lazy docker"
+      ],
       "categoria": "sistema_linux",
-      "tipo": [],
+      "tipo": [
+        "tui"
+      ],
       "sistema": [
         "linux"
       ]
@@ -679,12 +892,16 @@
     {
       "id": "timeshift",
       "nome": "Timeshift",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [],
+      "documentacao": "GUIA_DE_MONITORAMENTO.md",
+      "sha256": "CAB8F6B94249EB9D8EE4A6069E254697C3FED1177E1D63C13484FDBFF3EE58E4",
+      "aliases": [
+        "time shift"
+      ],
       "categoria": "sistema_linux",
-      "tipo": [],
+      "tipo": [
+        "gui"
+      ],
       "sistema": [
         "linux"
       ]
@@ -692,9 +909,11 @@
     {
       "id": "ventoy",
       "nome": "Ventoy",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
+      "arquivo": [
+        "ventoy"
+      ],
+      "documentacao": "Ventoy.md",
+      "sha256": "C444C197ECFA2E7828103E99D8BF3D9420254CAC39C2B330E56594BD558B6C3B",
       "aliases": [],
       "categoria": "recuperacao_backup",
       "tipo": [],
@@ -705,9 +924,9 @@
     {
       "id": "rufus",
       "nome": "Rufus",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
+      "arquivo": [],
+      "documentacao": "Rufus.md",
+      "sha256": "57F2A8E458240833176E79F3FA307DA821F376695BA55CA96399E6FB97ACAD02",
       "aliases": [],
       "categoria": "recuperacao_backup",
       "tipo": [],
@@ -718,10 +937,14 @@
     {
       "id": "testdisk",
       "nome": "TestDisk",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "testdisk-7.2.win64.zip"
+      ],
+      "documentacao": "TestDisk.md",
+      "sha256": "5E8464D05C51DC6B5917C5462B6566CC59A56B1526EBC2EF676CFD9919BFD723",
+      "aliases": [
+        "photorec"
+      ],
       "categoria": "recuperacao_backup",
       "tipo": [],
       "sistema": [
@@ -731,9 +954,11 @@
     {
       "id": "recuva",
       "nome": "Recuva",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
+      "arquivo": [
+        "rcsetup154.exe"
+      ],
+      "documentacao": "Recuva.md",
+      "sha256": "7A7F0858B542C8A3EE0ECA97F68E9FB4170828C99821BCE7FB0365AAF55A1FC0",
       "aliases": [],
       "categoria": "recuperacao_backup",
       "tipo": [],
@@ -744,10 +969,15 @@
     {
       "id": "partrecoverytoolkit",
       "nome": "PartRecoveryToolkit",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "PartRecoveryToolkit-Setup.exe"
+      ],
+      "documentacao": "ActivePartitionRecoveryToolkit.md",
+      "sha256": "5C779AE21A45D5B51EE536226E161F990AE15672F2429569CFC3E9409F56AC3A",
+      "aliases": [
+        "active partition recovery toolkit",
+        "art"
+      ],
       "categoria": "recuperacao_backup",
       "tipo": [],
       "sistema": [
@@ -757,9 +987,11 @@
     {
       "id": "eraser",
       "nome": "Eraser",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
+      "arquivo": [
+        "Eraser 6.2.0.2994.exe"
+      ],
+      "documentacao": "Eraser.md",
+      "sha256": "085F97A7A0A5069548EFB6ACEE645A7C27A04275EB076DCF1C1EB5E9B6D4AA33",
       "aliases": [],
       "categoria": "recuperacao_backup",
       "tipo": [],
@@ -770,10 +1002,16 @@
     {
       "id": "veracrypt",
       "nome": "VeraCrypt",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "VeraCrypt Portable 1.26.24.exe",
+        "VeraCrypt Setup 1.26.24.exe",
+        "VeraCrypt-1.26.24-x86_64.AppImage"
+      ],
+      "documentacao": "VeraCrypt.md",
+      "sha256": "B8D672BA1727AB8BB91CFFE24ED9DD73727CB2A78E55784FECBFFCEE8F56A860",
+      "aliases": [
+        "truecrypt successor"
+      ],
       "categoria": "recuperacao_backup",
       "tipo": [],
       "sistema": [
@@ -783,10 +1021,14 @@
     {
       "id": "winrar",
       "nome": "WinRAR",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "winrar-x64-720br.exe"
+      ],
+      "documentacao": "Compressao e Arquivamento.md",
+      "sha256": "37EC70B2DEE05E6930166BE60CAA716FEDC2043D0CFDD7A6427ADBD8DE2ECD0C",
+      "aliases": [
+        "rar"
+      ],
       "categoria": "recuperacao_backup",
       "tipo": [],
       "sistema": [
@@ -796,10 +1038,15 @@
     {
       "id": "7zip",
       "nome": "7-Zip",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "7-Zip"
+      ],
+      "documentacao": "Compressao e Arquivamento.md",
+      "sha256": "37EC70B2DEE05E6930166BE60CAA716FEDC2043D0CFDD7A6427ADBD8DE2ECD0C",
+      "aliases": [
+        "7z",
+        "p7zip"
+      ],
       "categoria": "recuperacao_backup",
       "tipo": [],
       "sistema": [
@@ -809,10 +1056,15 @@
     {
       "id": "rarlinux",
       "nome": "rarlinux",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "rarlinux-x64-720.tar.gz"
+      ],
+      "documentacao": "Compressao e Arquivamento.md",
+      "sha256": "37EC70B2DEE05E6930166BE60CAA716FEDC2043D0CFDD7A6427ADBD8DE2ECD0C",
+      "aliases": [
+        "rar for linux",
+        "unrar"
+      ],
       "categoria": "recuperacao_backup",
       "tipo": [],
       "sistema": [
@@ -822,10 +1074,15 @@
     {
       "id": "angryipscanner",
       "nome": "Angry IP Scanner",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "ipscan-3.9.3-setup.exe"
+      ],
+      "documentacao": "Angry IP Scanner (ipscan).md",
+      "sha256": "5026E81A90AD95FC46B404ABEA7D605E30BF88D178EA519B2078DA6B61FDC18C",
+      "aliases": [
+        "ipscan",
+        "angry ip"
+      ],
       "categoria": "rede_infraestrutura",
       "tipo": [],
       "sistema": [
@@ -835,10 +1092,14 @@
     {
       "id": "wireshark",
       "nome": "Wireshark",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "WiresharkPortable64_4.6.4.paf.exe"
+      ],
+      "documentacao": "Wireshark.md",
+      "sha256": "E4F22F9404D7BAE901F051E203589DEF08657B6D7ABC9B83ED5366BBA3CB5F9A",
+      "aliases": [
+        "ethereal"
+      ],
       "categoria": "rede_infraestrutura",
       "tipo": [],
       "sistema": [
@@ -848,10 +1109,15 @@
     {
       "id": "nmap",
       "nome": "Nmap",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "nmap-7.99-setup.exe"
+      ],
+      "documentacao": "Nmap.md",
+      "sha256": "6C308C187EE99268F66885238F7CFE51343193F8AC02EA58A42A02654DDDA8E1",
+      "aliases": [
+        "network mapper",
+        "zenmap"
+      ],
       "categoria": "rede_infraestrutura",
       "tipo": [],
       "sistema": [
@@ -861,10 +1127,14 @@
     {
       "id": "radminvpn",
       "nome": "Radmin VPN",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "Radmin_VPN_1.4.4642.1.exe"
+      ],
+      "documentacao": "Radmin VPN.md",
+      "sha256": "F70C42DD1C03FA0D85ED72D2A4B9FD570D8488CF16CC18B1937DD1F2AE63BEFC",
+      "aliases": [
+        "radmin"
+      ],
       "categoria": "rede_infraestrutura",
       "tipo": [],
       "sistema": [
@@ -874,10 +1144,14 @@
     {
       "id": "ghidra",
       "nome": "Ghidra",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "ghidra_12.0.4_PUBLIC_20260303.zip"
+      ],
+      "documentacao": "Ghidra.md",
+      "sha256": "079C31F5B1B3C4C816984F81DFAEE0209DBD67FCC950203E33FF1F3C9075CD39",
+      "aliases": [
+        "nsa ghidra"
+      ],
       "categoria": "reverse_engineering",
       "tipo": [],
       "sistema": [
@@ -887,10 +1161,15 @@
     {
       "id": "x64dbg",
       "nome": "x64dbg",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "x64dbg.zip"
+      ],
+      "documentacao": "x64dbg.md",
+      "sha256": "A918C4A874B8A39C18F9292F9F2480558C62173D5697AC4CF4838EB6E382150C",
+      "aliases": [
+        "x32dbg",
+        "x64 debugger"
+      ],
       "categoria": "reverse_engineering",
       "tipo": [],
       "sistema": [
@@ -900,10 +1179,16 @@
     {
       "id": "dependencywalker",
       "nome": "Dependency Walker",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "depends22_x64.zip",
+        "depends22_x86.zip"
+      ],
+      "documentacao": "Dependency Walker.md",
+      "sha256": "12CA3F1C57DA69E85434221C8C43968FFBE1D0F3977C75169733034F0B8E65F4",
+      "aliases": [
+        "depends",
+        "depends.exe"
+      ],
       "categoria": "reverse_engineering",
       "tipo": [],
       "sistema": [
@@ -913,10 +1198,14 @@
     {
       "id": "detectiteasy",
       "nome": "Detect It Easy",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "die_win64_portable_3.21_x64.zip"
+      ],
+      "documentacao": "Detect It Easy (DIE).md",
+      "sha256": "94B435674246A517475DF53EDCB036AF77096A507B0700F4934BA124F395481E",
+      "aliases": [
+        "die"
+      ],
       "categoria": "reverse_engineering",
       "tipo": [],
       "sistema": [
@@ -926,10 +1215,14 @@
     {
       "id": "pebear",
       "nome": "PE-bear",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "PE-bear_0.7.1_qt5_x64_win_vs19.zip"
+      ],
+      "documentacao": "PE-bear.md",
+      "sha256": "89741E2A43D168C6F63279756A09C687921FA8A46810415E2A71F0364A165D9F",
+      "aliases": [
+        "pe bear"
+      ],
       "categoria": "reverse_engineering",
       "tipo": [],
       "sistema": [
@@ -939,10 +1232,14 @@
     {
       "id": "hxd",
       "nome": "HxD",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "HxDSetup.zip"
+      ],
+      "documentacao": "HxD.md",
+      "sha256": "9F6866FA60713E565541B1F8E23B7D1D7E8277E8C0457FE7524061FD8988A46A",
+      "aliases": [
+        "hex editor hxd"
+      ],
       "categoria": "reverse_engineering",
       "tipo": [],
       "sistema": [
@@ -952,10 +1249,14 @@
     {
       "id": "objdump",
       "nome": "objDump",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "objDump-0.1.zip"
+      ],
+      "documentacao": "objDump.md",
+      "sha256": "2E1D20A9091C52EC847E7F2735F8FCC6256F757EC1897FECFABDA6D0FF5A20E2",
+      "aliases": [
+        "gnu objdump"
+      ],
       "categoria": "reverse_engineering",
       "tipo": [],
       "sistema": [
@@ -965,10 +1266,14 @@
     {
       "id": "gdb",
       "nome": "gdb",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "gdb-17.1.tar.gz"
+      ],
+      "documentacao": "gdb.md",
+      "sha256": "09C0A473993E7988F5F5D2C31763097CB3F92283B8C56D367BA43410D9EC9546",
+      "aliases": [
+        "gnu debugger"
+      ],
       "categoria": "reverse_engineering",
       "tipo": [],
       "sistema": [
@@ -978,10 +1283,12 @@
     {
       "id": "nasm",
       "nome": "nasm",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [],
+      "documentacao": "Nasm.md",
+      "sha256": "98B42F8E5424F640D1EDA4241C33D3D780D64DBAC22E7EC7D9D1D459C04F8B95",
+      "aliases": [
+        "netwide assembler"
+      ],
       "categoria": "reverse_engineering",
       "tipo": [],
       "sistema": [
@@ -991,10 +1298,15 @@
     {
       "id": "volatility3",
       "nome": "volatility3",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "volatility3-develop.zip"
+      ],
+      "documentacao": "volatility3.md",
+      "sha256": "44B4436B965981CCC81025A59DA168A903D4936557FF18A39AE494450206171A",
+      "aliases": [
+        "vol3",
+        "volatility"
+      ],
       "categoria": "reverse_engineering",
       "tipo": [],
       "sistema": [
@@ -1004,10 +1316,15 @@
     {
       "id": "metasploit",
       "nome": "Metasploit",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "metasploitframework-latest.msi"
+      ],
+      "documentacao": "Metasploit Framework.md",
+      "sha256": "10F1FA54650C8C80DE85276718A9053567D9F20BFE05BF486837768BFDF00007",
+      "aliases": [
+        "msfconsole",
+        "msf"
+      ],
       "categoria": "seguranca_pentest",
       "tipo": [],
       "sistema": [
@@ -1017,10 +1334,14 @@
     {
       "id": "burpsuite",
       "nome": "Burp Suite",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "burpsuite_community_windows-x64_v2026_3_3.exe"
+      ],
+      "documentacao": "Burp Suite Community.md",
+      "sha256": "26A0D3163043BF84628EE8D0CAC74B19853DBEEE204BFDF21633FAB9E3D7A513",
+      "aliases": [
+        "burp"
+      ],
       "categoria": "seguranca_pentest",
       "tipo": [],
       "sistema": [
@@ -1030,10 +1351,14 @@
     {
       "id": "owaspzap",
       "nome": "OWASP ZAP",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "ZAP_2_17_0_windows.exe"
+      ],
+      "documentacao": "OWASP ZAP.md",
+      "sha256": "6D8215A1945DB41CB1191A61BE05C9F27857FD5F2FFD283F7756F837C280C305",
+      "aliases": [
+        "zap"
+      ],
       "categoria": "seguranca_pentest",
       "tipo": [],
       "sistema": [
@@ -1043,10 +1368,15 @@
     {
       "id": "beef",
       "nome": "BeEF",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "beef-0.6.0.0.zip"
+      ],
+      "documentacao": "BeEF.md",
+      "sha256": "3F422DC2ABB6C2A4662FD9FD093D4118BD9CAD33D88997B99FA3E41F9CADF264",
+      "aliases": [
+        "beef xss",
+        "browser exploitation framework"
+      ],
       "categoria": "seguranca_pentest",
       "tipo": [],
       "sistema": [
@@ -1056,9 +1386,11 @@
     {
       "id": "hashcat",
       "nome": "Hashcat",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
+      "arquivo": [
+        "hashcat-7.1.2.tar.gz"
+      ],
+      "documentacao": "Hashcat.md",
+      "sha256": "676DACA70FD11966B010373D22EF8FAABAF63CEC3F3BE425845DF0B4EC69EDF0",
       "aliases": [],
       "categoria": "seguranca_pentest",
       "tipo": [],
@@ -1069,10 +1401,15 @@
     {
       "id": "johntheripper",
       "nome": "John the Ripper",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "john-1.9.0-jumbo-1-win64.zip"
+      ],
+      "documentacao": "John the Ripper.md",
+      "sha256": "4DE73D63562D5B6B513EE99745908FE17B031B0E8640338B36A78B2990B4B2D8",
+      "aliases": [
+        "jtr",
+        "john"
+      ],
       "categoria": "seguranca_pentest",
       "tipo": [],
       "sistema": [
@@ -1082,9 +1419,11 @@
     {
       "id": "sherlock",
       "nome": "Sherlock",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
+      "arquivo": [
+        "sherlock-master.zip"
+      ],
+      "documentacao": "Sherlock.md",
+      "sha256": "677AF26AA5B805AAA81B6D20DE289C001D2D075BB756FCCF747422E6A08A1D80",
       "aliases": [],
       "categoria": "seguranca_pentest",
       "tipo": [],
@@ -1095,9 +1434,11 @@
     {
       "id": "lynis",
       "nome": "Lynis",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
+      "arquivo": [
+        "lynis-3.1.6.tar.gz"
+      ],
+      "documentacao": "Lynis.md",
+      "sha256": "2E7CD0F5B9E4D537D5DD2DFE134A64F45AAF05EFC17D5C78F1D4E613F83977A8",
       "aliases": [],
       "categoria": "seguranca_pentest",
       "tipo": [],
@@ -1108,10 +1449,14 @@
     {
       "id": "rkhunter",
       "nome": "rkhunter",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "rkhunter-1.4.6.tar.gz"
+      ],
+      "documentacao": "Rootkit Hunter (rkhunter).md",
+      "sha256": "F11EC4ED4FDACB379951EE9A0A9CF5EA64F1CED08A630BCC2432535378426EDB",
+      "aliases": [
+        "rootkit hunter"
+      ],
       "categoria": "seguranca_pentest",
       "tipo": [],
       "sistema": [
@@ -1121,10 +1466,14 @@
     {
       "id": "rockyoutxt",
       "nome": "rockyou.txt",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "rockyou.txt.gz"
+      ],
+      "documentacao": "rockyou.md",
+      "sha256": "26668F59046EB8C1586F3B922DA756CFD11C430CBCA582CA2ABF3CD9FCA17398",
+      "aliases": [
+        "rockyou"
+      ],
       "categoria": "seguranca_pentest",
       "tipo": [],
       "sistema": [
@@ -1134,10 +1483,15 @@
     {
       "id": "virtualbox",
       "nome": "VirtualBox",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "VirtualBox-7.2.8-173730-Win.exe"
+      ],
+      "documentacao": "VirtualBox.md",
+      "sha256": "E83980095D885DF6A4A881D9FF8BEA716CD3F3C6241C58509B4F956B25912A0E",
+      "aliases": [
+        "vbox",
+        "oracle virtualbox"
+      ],
       "categoria": "virtualizacao",
       "tipo": [],
       "sistema": [
@@ -1147,10 +1501,15 @@
     {
       "id": "projectnomad",
       "nome": "Project N.O.M.A.D.",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "project-nomad-main.zip"
+      ],
+      "documentacao": "Project NOMAD.md",
+      "sha256": "C8D6F54FB1E057780BC7B196121397182667C937025EE35B9F4221CA1D6DE47C",
+      "aliases": [
+        "n.o.m.a.d.",
+        "nomad"
+      ],
       "categoria": "laboratorio_offline",
       "tipo": [],
       "sistema": [
@@ -1160,9 +1519,11 @@
     {
       "id": "bitwarden",
       "nome": "Bitwarden",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
+      "arquivo": [
+        "Bitwarden-Installer-2026.3.1.exe"
+      ],
+      "documentacao": "Bitwarden.md",
+      "sha256": "72E59FFDFE2810344DC2C804DCC0D41C3FBD6A04441035112A182B8B289F4DCD",
       "aliases": [],
       "categoria": "criptografia_senhas",
       "tipo": [],
@@ -1173,10 +1534,14 @@
     {
       "id": "keepassxc",
       "nome": "KeePassXC",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "KeePassXC-2.7.12-Win64.msi"
+      ],
+      "documentacao": "KeePassXC.md",
+      "sha256": "99878BACED4CA852B57E2A1AC9875A90BAE912CE3D6E1BAC6E2CAF1562595C2D",
+      "aliases": [
+        "keepass xc"
+      ],
       "categoria": "criptografia_senhas",
       "tipo": [],
       "sistema": [
@@ -1186,10 +1551,14 @@
     {
       "id": "dupeguru",
       "nome": "dupeGuru",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "dupeGuru_win64_4.3.1.exe"
+      ],
+      "documentacao": "dupeGuru.md",
+      "sha256": "5AA60018044ED47B5EAFFD30BFF14EE473CD19FE0962C9F66A129E6B67500B0A",
+      "aliases": [
+        "dupe guru"
+      ],
       "categoria": "organizacao_utilidades",
       "tipo": [],
       "sistema": [
@@ -1199,10 +1568,14 @@
     {
       "id": "geekuninstaller",
       "nome": "Geek Uninstaller",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "geek.zip"
+      ],
+      "documentacao": "Geek Uninstaller.md",
+      "sha256": "1EFAAE6F6C67D9EC5086E782AB1C78D05967ABCFFEF70DE76A2BFAFA3A5621A1",
+      "aliases": [
+        "geek uninstall"
+      ],
       "categoria": "organizacao_utilidades",
       "tipo": [],
       "sistema": [
@@ -1212,10 +1585,14 @@
     {
       "id": "memwipe",
       "nome": "MemWipe",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "MemWipe.exe"
+      ],
+      "documentacao": "MemWipe.md",
+      "sha256": "A3092BB54E610A4D67C592B1DADEE65A8C8B30CA66E3E2CB918CAB33D3842894",
+      "aliases": [
+        "mem wipe"
+      ],
       "categoria": "organizacao_utilidades",
       "tipo": [],
       "sistema": [
@@ -1225,10 +1602,15 @@
     {
       "id": "vlc",
       "nome": "VLC",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "vlc-3.0.23-win64.exe"
+      ],
+      "documentacao": "VLC.md",
+      "sha256": "0F43BF2F5549B598B8B6A7688E845B0A7EC258D18DAE82FCE4CD23FD785AF313",
+      "aliases": [
+        "vlc media player",
+        "videolan"
+      ],
       "categoria": "organizacao_utilidades",
       "tipo": [],
       "sistema": [
@@ -1238,10 +1620,15 @@
     {
       "id": "cudatoolkit",
       "nome": "CUDA Toolkit",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [
+        "cuda_13.3.0_windows.exe"
+      ],
+      "documentacao": "CUDA Toolkit.md",
+      "sha256": "49623C73E8DC7F12644099A7814DA30B49B3536985D389738C89D3C43D460871",
+      "aliases": [
+        "cuda",
+        "nvidia cuda"
+      ],
       "categoria": "desenvolvimento",
       "tipo": [],
       "sistema": [
@@ -1251,9 +1638,11 @@
     {
       "id": "git",
       "nome": "Git",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
+      "arquivo": [
+        "Git-2.48.1-64-bit.exe"
+      ],
+      "documentacao": "Git.md",
+      "sha256": "F3C9B84F3172646E24382351707E038F9FCAF523CDA4AAF50F54CD8B77322C4C",
       "aliases": [],
       "categoria": "desenvolvimento",
       "tipo": [],
@@ -1264,12 +1653,17 @@
     {
       "id": "dbeavercommunity",
       "nome": "DBeaver Community",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [],
+      "documentacao": "GUIA_DE_MONITORAMENTO.md",
+      "sha256": "CAB8F6B94249EB9D8EE4A6069E254697C3FED1177E1D63C13484FDBFF3EE58E4",
+      "aliases": [
+        "dbeaver",
+        "dbeaver ce"
+      ],
       "categoria": "desenvolvimento",
-      "tipo": [],
+      "tipo": [
+        "gui"
+      ],
       "sistema": [
         "ambos"
       ]
@@ -1277,12 +1671,16 @@
     {
       "id": "insomnia",
       "nome": "Insomnia",
-      "arquivo": "",
-      "documentacao": "",
-      "sha256": "",
-      "aliases": [],
+      "arquivo": [],
+      "documentacao": "GUIA_DE_MONITORAMENTO.md",
+      "sha256": "CAB8F6B94249EB9D8EE4A6069E254697C3FED1177E1D63C13484FDBFF3EE58E4",
+      "aliases": [
+        "insomnia rest client"
+      ],
       "categoria": "desenvolvimento",
-      "tipo": [],
+      "tipo": [
+        "gui"
+      ],
       "sistema": [
         "ambos"
       ]

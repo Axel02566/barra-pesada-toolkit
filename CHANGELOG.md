@@ -1,6 +1,23 @@
 # CHANGELOG
 
 Registro de alterações do BARRA PESADA — Toolkit.
+
+## [1.5] — Julho/2026
+
+### Adicionado
+- `arquivo`, `documentacao`, `sha256`, `aliases` e `tipo` preenchidos nas 99 entradas de `manifest/catalogo_manual.json` — débito aberto desde a criação do catálogo manual, que impedia o buscador de ligar ferramenta → documentação/arquivo.
+  - `documentacao` casado com os arquivos de `Personal_Doc/`.
+  - `sha256` preenchido com o hash do arquivo de documentação (fonte: `files_health/hashes_sha256.txt`).
+  - `arquivo` preenchido com os binários reais em `FERRAMENTAS/` (campo passou a ser array — VeraCrypt e Dependency Walker têm mais de um arquivo por ferramenta).
+  - `tipo` preenchido para as ferramentas com tipo explícito em `GUIA_DE_MONITORAMENTO.md`; `aliases` preenchido com abreviações e nomes alternativos conhecidos.
+- Opção **6) Arquivo** em `buscador_manifesto.sh` e `buscar_manifesto.ps1` — busca por nome de arquivo, agora que o campo está preenchido.
+- `executar_tudo.sh`, `executar_tudo.ps1` e `Executar_Tudo.bat` em `scripts/` — hub de menu único para verificar hashes, regenerar hashes e buscar ferramentas, sem precisar lembrar o nome de cada script.
+
+### Conhecido
+- `rufus`, `dbeavercommunity`, `insomnia` e `nasm` ficaram com `arquivo: []` — sem binário correspondente em `FERRAMENTAS/` no momento desta atualização.
+
+---
+
 ## [1.4] — Junho/2026
  
 ### Adicionado

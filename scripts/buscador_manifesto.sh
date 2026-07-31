@@ -47,8 +47,9 @@ echo "  2) Alias"
 echo "  3) Categoria"
 echo "  4) Tipo"
 echo "  5) Sistema"
+echo "  6) Arquivo"
 echo ""
-read -rp "Escolha uma opção [1-5]: " opcao
+read -rp "Escolha uma opção [1-6]: " opcao
 echo ""
 
 # Valida opção
@@ -58,6 +59,7 @@ case "$opcao" in
     3) campo="categoria" ;;
     4) campo="tipo"      ;;
     5) campo="sistema"   ;;
+    6) campo="arquivo"   ;;
     *)
         echo "[ERRO] Opção inválida."
         exit 1
@@ -70,7 +72,7 @@ echo ""
 # -------------------------
 # Executa busca via jq
 # -------------------------
-if [ "$campo" = "aliases" ] || [ "$campo" = "tipo" ] || [ "$campo" = "sistema" ]; then
+if [ "$campo" = "aliases" ] || [ "$campo" = "tipo" ] || [ "$campo" = "sistema" ] || [ "$campo" = "arquivo" ]; then
     # Campos que são arrays — busca dentro do array
     resultados="$(jq -r \
         --arg termo "$termo" \
