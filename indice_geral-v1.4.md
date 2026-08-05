@@ -1,5 +1,5 @@
 # BARRA PESADA — Índice Geral
-# Versão 1.3
+# Versão 1.4
 
 ## Objetivo
 Toolkit portátil para:
@@ -101,6 +101,10 @@ Toolkit portátil para:
 - Wireshark `[Windows / Linux]`
 - Nmap `[Windows / Linux]`
 - Radmin VPN `[Windows]`
+- Netcat (ncat) `[Windows / Linux]`
+- tcpdump `[Linux]`
+- iperf3 `[Windows / Linux]`
+- mtr `[Linux]`
 
 ---
 
@@ -116,6 +120,12 @@ Toolkit portátil para:
 - nasm `[Windows / Linux]`
 - volatility3 `[Windows / Linux]`
 - Kernel Debug Symbols (dbgsym) `[Linux]`
+- binwalk `[Linux]`
+- WinDbg `[Windows]`
+- crash (kdump-utils) `[Linux]`
+- Manuais de Arquitetura (Intel, AMD, ARM) `[Recurso]`
+- Bug Check Code Reference (Windows) `[Recurso]`
+- Kernel Panic e Oops (Linux) `[Recurso]`
 
 ---
 
@@ -130,11 +140,17 @@ Toolkit portátil para:
 - Lynis `[Linux]`
 - rkhunter `[Linux]`
 - rockyou.txt `[Recurso]`
+- ParamSpider `[Windows / Linux]`
+- ffuf `[Windows / Linux]`
+- SQLMap `[Windows / Linux]`
+- subfinder `[Windows / Linux]`
 
 ---
 
 ## Virtualização / Ambientes
 - VirtualBox `[Windows / Linux]`
+- QEMU `[Windows / Linux]`
+- Sandboxie-Plus `[Windows]`
 
 ---
 
@@ -184,7 +200,8 @@ As versões armazenadas no pendrive são as mais recentes no momento do arquivam
 Priorizar atualização de:
 - ferramentas de segurança;
 - ferramentas com histórico de vulnerabilidades (ex: CCleaner);
-- frameworks ativamente mantidos (ex: Metasploit, Ghidra, volatility3).
+- frameworks ativamente mantidos (ex: Metasploit, Ghidra, volatility3, ffuf, subfinder);
+- forks de ferramentas com manutenção variável (ex: ParamSpider — checar qual fork está ativo antes de fixar versão).
 
 ---
 
@@ -198,6 +215,10 @@ Usar com cautela:
 - volatility3
 - Wireshark
 - Nmap
+- SQLMap
+- ffuf
+- Netcat (ncat)
+- tcpdump
 
 ---
 
@@ -215,6 +236,8 @@ Usar com cautela:
 - `Autoruns.md` — análise de persistência no Windows
 - `GUIA_DE_MONITORAMENTO.md` — monitoramento e diagnóstico no Linux
 - `Dbgsysm.md` — símbolos de depuração do kernel Linux
+- `WinDbg.md` + `Bug Check Code Reference (Windows).md` — par de análise de crash no Windows
+- `crash (kdump-utils).md` + `Kernel Panic e Oops (Linux).md` — par de análise de crash no Linux
 
 ---
 
