@@ -1684,6 +1684,287 @@
       "sistema": [
         "ambos"
       ]
+    },
+    {
+      "id": "netcat",
+      "nome": "Netcat (ncat)",
+      "arquivo": [],
+      "documentacao": "Netcat (ncat).md",
+      "sha256": "DA5A38D9A8E80BE24013D8052F83AB1B46FC0F24E9EEC0963F6600315C9F90B7",
+      "aliases": [
+        "ncat",
+        "nc"
+      ],
+      "categoria": "rede_infraestrutura",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "tcpdump",
+      "nome": "tcpdump",
+      "arquivo": [],
+      "documentacao": "tcpdump.md",
+      "sha256": "6F33A6F9947C976986DF1B5842CC95532B2894995D6203DB732D038A9F00126E",
+      "aliases": [],
+      "categoria": "rede_infraestrutura",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "iperf3",
+      "nome": "iperf3",
+      "arquivo": [],
+      "documentacao": "iperf3.md",
+      "sha256": "0A417A14A6AE59BEEB6C43639B7FE52BA5543E2606FE79F2B66E61480FC75971",
+      "aliases": [
+        "iperf"
+      ],
+      "categoria": "rede_infraestrutura",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "mtr",
+      "nome": "mtr",
+      "arquivo": [],
+      "documentacao": "mtr.md",
+      "sha256": "4749D98E3AB4D697965011342821474B8F4D9DACADF29ABE93EF7034FD4D5D86",
+      "aliases": [
+        "my traceroute"
+      ],
+      "categoria": "rede_infraestrutura",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "binwalk",
+      "nome": "binwalk",
+      "arquivo": [],
+      "documentacao": "binwalk.md",
+      "sha256": "8D7B9672BE2380F1BDAD6D860901647ECDC81EBBCBF53A3663E3DC9401DE3C04",
+      "aliases": [],
+      "categoria": "reverse_engineering",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "windbg",
+      "nome": "WinDbg",
+      "arquivo": [],
+      "documentacao": "WinDbg.md",
+      "sha256": "BBA5A4BDB00DB447886B094223C8506F8A38222AF144FF502D7B96ED9B84B97B",
+      "aliases": [
+        "windbgx",
+        "windbg preview"
+      ],
+      "categoria": "reverse_engineering",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "crash",
+      "nome": "crash (kdump-utils)",
+      "arquivo": [],
+      "documentacao": "crash (kdump-utils).md",
+      "sha256": "AF5F4E55D7EF6D88FCB88F7B8ABDE1D45C74830B499B6FE80B9F31CD6FCA6686",
+      "aliases": [
+        "kdump-utils",
+        "crash utility"
+      ],
+      "categoria": "reverse_engineering",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "manuaisarquitetura",
+      "nome": "Manuais de Arquitetura (Intel, AMD, ARM)",
+      "arquivo": [],
+      "documentacao": "Manuais de Arquitetura (Intel, AMD, ARM).md",
+      "sha256": "46366D6E891684E2DB2EC8A9286211F887F1E0FD716434AAF26C848ECAC8FCF5",
+      "aliases": [
+        "intel sdm",
+        "amd apm",
+        "arm arm"
+      ],
+      "categoria": "reverse_engineering",
+      "tipo": [],
+      "sistema": [
+        "recurso"
+      ]
+    },
+    {
+      "id": "bugcheckcodereference",
+      "nome": "Bug Check Code Reference (Windows)",
+      "arquivo": [],
+      "documentacao": "Bug Check Code Reference (Windows).md",
+      "sha256": "B3755447233A7EC2E91371DE2AEC93C92EF471B8B44378EA25878EF2846A849C",
+      "aliases": [
+        "bug check codes",
+        "bsod reference"
+      ],
+      "categoria": "reverse_engineering",
+      "tipo": [],
+      "sistema": [
+        "recurso"
+      ]
+    },
+    {
+      "id": "kernelpanicoops",
+      "nome": "Kernel Panic e Oops (Linux)",
+      "arquivo": [],
+      "documentacao": "Kernel Panic e Oops (Linux).md",
+      "sha256": "57D983B08FA3A700C7372B7F94D790E33FA3595215CD95CEB11507E2B1847599",
+      "aliases": [
+        "kernel oops",
+        "kernel panic"
+      ],
+      "categoria": "reverse_engineering",
+      "tipo": [],
+      "sistema": [
+        "recurso"
+      ]
+    },
+    {
+      "id": "paramspider",
+      "nome": "ParamSpider",
+      "arquivo": [],
+      "documentacao": "ParamSpider.md",
+      "sha256": "61767CFC717A748B1E5EAC3B5124019C534CAEDC4F2B6A0AC97C28176706AE37",
+      "aliases": [],
+      "categoria": "seguranca_pentest",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "ffuf",
+      "nome": "ffuf",
+      "arquivo": [],
+      "documentacao": "ffuf.md",
+      "sha256": "694258B142FB365DD7CD2909CB11DB6DF49440AB6163A62345B7DAEE47C9E8C8",
+      "aliases": [
+        "fuzz faster u fool"
+      ],
+      "categoria": "seguranca_pentest",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "sqlmap",
+      "nome": "SQLMap",
+      "arquivo": [],
+      "documentacao": "SQLMap.md",
+      "sha256": "5BE8CF715C4953CC96DEDC65D5FABAD4993D88902AFDC0FCA905AAE0448812F8",
+      "aliases": [],
+      "categoria": "seguranca_pentest",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "subfinder",
+      "nome": "subfinder",
+      "arquivo": [],
+      "documentacao": "subfinder.md",
+      "sha256": "F6C5C0EC62BB2183FFCB844D8A10FB54877F7E067F55FB41F9A01695F42BD04A",
+      "aliases": [],
+      "categoria": "seguranca_pentest",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "qemu",
+      "nome": "QEMU",
+      "arquivo": [],
+      "documentacao": "QEMU.md",
+      "sha256": "07C4DE4F18740688B4C36FB415898B3648DBE192CB6C9B8EEB28A188498E332F",
+      "aliases": [
+        "qemu-system"
+      ],
+      "categoria": "virtualizacao",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "sandboxieplus",
+      "nome": "Sandboxie-Plus",
+      "arquivo": [],
+      "documentacao": "Sandboxie-Plus.md",
+      "sha256": "D74D2E834EDE1134F5465EA678447C603B6828E8A772F32528656DD8C18CD801",
+      "aliases": [
+        "sandboxie"
+      ],
+      "categoria": "virtualizacao",
+      "tipo": [],
+      "sistema": [
+        "windows"
+      ]
+    },
+    {
+      "id": "hivex",
+      "nome": "Hivex",
+      "arquivo": [],
+      "documentacao": "Hivex.md",
+      "sha256": "0D49048E115DD206DB1F835E6A9E4AD4A9A38435A19A9A99C88450EF1672B7D8",
+      "aliases": [
+        "hivexsh",
+        "hivexregedit"
+      ],
+      "categoria": "reverse_engineering",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
+      "id": "regripper",
+      "nome": "RegRipper",
+      "arquivo": [],
+      "documentacao": "RegRipper.md",
+      "sha256": "93DC179CBC69759CCD16963CE4E358B2AEB39BA15F4A841AC42D311A3BDC365A",
+      "aliases": [],
+      "categoria": "reverse_engineering",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
+    },
+    {
+      "id": "sleuthkit",
+      "nome": "The Sleuth Kit",
+      "arquivo": [],
+      "documentacao": "The Sleuth Kit.md",
+      "sha256": "6B0081F846E748F66053167CF372C36762DCFA3270F763D81588335C6F3FBC93",
+      "aliases": [
+        "tsk"
+      ],
+      "categoria": "reverse_engineering",
+      "tipo": [],
+      "sistema": [
+        "ambos"
+      ]
     }
   ]
 }

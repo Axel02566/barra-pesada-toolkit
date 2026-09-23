@@ -2,6 +2,36 @@
 
 Registro de alterações do BARRA PESADA — Toolkit.
 
+## [1.7] — Setembro/2026
+
+### Adicionado
+- Categoria **Reverse Engineering / Forensics** ganhou o tripé clássico de DFIR que faltava — registro e disco, complementando volatility3 (memória):
+  - RegRipper `[Windows / Linux]` — análise forense de hives do Registro do Windows via plugins.
+  - Hivex `[Linux]` — biblioteca de leitura/escrita de hives de registro, complemento de baixo nível ao RegRipper.
+  - The Sleuth Kit (TSK) `[Windows / Linux]` — análise forense de imagem de disco e sistema de arquivos.
+- `indice_geral-v1.4.md` renomeado para `indice_geral-v1.5.md`; nova entrada em **Documentação por ferramenta** ligando os três `.md` como o tripé registro/disco/memória.
+- 3 novas entradas em `manifest/catalogo_manual.json` (115 → 118), seguindo o mesmo padrão das anteriores (`documentacao` casado com `Personal_Doc/`, `sha256` do próprio hash da documentação, `tipo` vazio por falta de linha `Tipo:` explícita nos docs).
+- `files_health/hashes_sha256.txt` regenerado — 94 → 97 documentos hasheados.
+
+---
+
+## [1.6] — Agosto/2026
+
+### Adicionado
+- 16 novas ferramentas distribuídas em 4 categorias já existentes do Índice Geral (`indice_geral-v1.3.md` → `indice_geral-v1.4.md`):
+  - **Rede / Infraestrutura**: Netcat (ncat), tcpdump, iperf3, mtr.
+  - **Reverse Engineering / Forensics**: binwalk, WinDbg, crash (kdump-utils), Manuais de Arquitetura (Intel, AMD, ARM), Bug Check Code Reference (Windows), Kernel Panic e Oops (Linux).
+  - **Segurança / Pentest**: ParamSpider, ffuf, SQLMap, subfinder.
+  - **Virtualização / Ambientes**: QEMU, Sandboxie-Plus.
+- 16 novas entradas em `manifest/catalogo_manual.json` (99 → 115), preenchidas com o mesmo padrão da v1.5 do catálogo (`documentacao`, `sha256`, `aliases` grounded, `tipo` só onde há evidência explícita).
+- `files_health/hashes_sha256.txt` regenerado — 78 → 94 documentos hasheados.
+- SQLMap, ffuf, Netcat (ncat) e tcpdump adicionados à lista de **Ferramentas de risco elevado**.
+
+### Conhecido
+- Nenhum binário verificado para as 16 ferramentas novas em `FERRAMENTAS/` no momento desta atualização — `arquivo: []` em todas.
+
+---
+
 ## [1.5] — Julho/2026
 
 ### Adicionado

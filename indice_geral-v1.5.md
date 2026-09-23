@@ -1,5 +1,5 @@
 # BARRA PESADA — Índice Geral
-# Versão 1.4
+# Versão 1.5
 
 ## Objetivo
 Toolkit portátil para:
@@ -126,6 +126,9 @@ Toolkit portátil para:
 - Manuais de Arquitetura (Intel, AMD, ARM) `[Recurso]`
 - Bug Check Code Reference (Windows) `[Recurso]`
 - Kernel Panic e Oops (Linux) `[Recurso]`
+- RegRipper `[Windows / Linux]`
+- Hivex `[Linux]`
+- The Sleuth Kit (TSK) `[Windows / Linux]`
 
 ---
 
@@ -238,6 +241,7 @@ Usar com cautela:
 - `Dbgsysm.md` — símbolos de depuração do kernel Linux
 - `WinDbg.md` + `Bug Check Code Reference (Windows).md` — par de análise de crash no Windows
 - `crash (kdump-utils).md` + `Kernel Panic e Oops (Linux).md` — par de análise de crash no Linux
+- `RegRipper.md` + `Hivex.md` + `The Sleuth Kit.md` — tripé de DFIR: registro (RegRipper, com Hivex como complemento de baixo nível), disco (TSK) e memória (volatility3)
 
 ---
 
