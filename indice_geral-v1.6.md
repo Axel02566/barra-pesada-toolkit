@@ -1,5 +1,5 @@
 # BARRA PESADA — Índice Geral
-# Versão 1.5
+# Versão 1.6
 
 ## Objetivo
 Toolkit portátil para:
@@ -27,6 +27,8 @@ Toolkit portátil para:
 - FurMark `[Windows]`
 - Prime95 `[Windows / Linux]`
 - MemTest86 `[Bootável]`
+- Memtest86+ `[Bootável]`
+- memtester `[Linux]`
 - HCI MemTest `[Windows]`
 - TestMem5 `[Windows]`
 - ThrottleStop `[Windows]`
@@ -93,6 +95,7 @@ Toolkit portátil para:
 - WinRAR `[Windows]`
 - 7-Zip `[Windows / Linux]`
 - rarlinux `[Linux]`
+- Sergei Strelec WinPE `[Bootável]`
 
 ---
 
@@ -242,6 +245,7 @@ Usar com cautela:
 - `WinDbg.md` + `Bug Check Code Reference (Windows).md` — par de análise de crash no Windows
 - `crash (kdump-utils).md` + `Kernel Panic e Oops (Linux).md` — par de análise de crash no Linux
 - `RegRipper.md` + `Hivex.md` + `The Sleuth Kit.md` — tripé de DFIR: registro (RegRipper, com Hivex como complemento de baixo nível), disco (TSK) e memória (volatility3)
+- `MemTest86.md` + `Memtest86+.md` + `memtester.md` + `HCI MemTest.md` + `TestMem5.md` — testes de RAM por ambiente: sem SO (MemTest86, Memtest86+), Linux vivo (memtester), Windows vivo (HCI MemTest, TestMem5)
 
 ---
 

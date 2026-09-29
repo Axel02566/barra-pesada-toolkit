@@ -163,6 +163,35 @@
       ]
     },
     {
+      "id": "memtest86plus",
+      "nome": "Memtest86+",
+      "arquivo": [],
+      "documentacao": "Memtest86+.md",
+      "sha256": "54A62721F332532E36206CB743CE1DA8443DF7B7784CA183949F69AE48ACE695",
+      "aliases": [
+        "mt86+",
+        "memtest86plus"
+      ],
+      "categoria": "hardware_benchmark",
+      "tipo": [],
+      "sistema": [
+        "bootavel"
+      ]
+    },
+    {
+      "id": "memtester",
+      "nome": "memtester",
+      "arquivo": [],
+      "documentacao": "memtester.md",
+      "sha256": "E18BDE255CBBEF34DA9CA0A5DA69F5333FF0E39B29D2CF4591FC5CF41C6E1D87",
+      "aliases": [],
+      "categoria": "hardware_benchmark",
+      "tipo": [],
+      "sistema": [
+        "linux"
+      ]
+    },
+    {
       "id": "hcimemtest",
       "nome": "HCI MemTest",
       "arquivo": [
@@ -1069,6 +1098,22 @@
       "tipo": [],
       "sistema": [
         "linux"
+      ]
+    },
+    {
+      "id": "strelec",
+      "nome": "Sergei Strelec WinPE",
+      "arquivo": [],
+      "documentacao": "Sergei Strelec WinPE.md",
+      "sha256": "95FB3B2F41954F80AD21C3E5263724AA38F1E0B6E8B1A3C9938F79E46D37156C",
+      "aliases": [
+        "strelec",
+        "winpe strelec"
+      ],
+      "categoria": "recuperacao_backup",
+      "tipo": [],
+      "sistema": [
+        "bootavel"
       ]
     },
     {

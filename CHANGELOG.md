@@ -2,6 +2,22 @@
 
 Registro de alterações do BARRA PESADA — Toolkit.
 
+## [1.9] — Setembro/2026
+
+### Adicionado
+- **Hardware / Benchmark** ganhou cobertura de teste de RAM fora do Windows:
+  - Memtest86+ `[Bootável]` — testador de RAM open source (GPL), redundância livre para o MemTest86 na biblioteca do Ventoy.
+  - memtester `[Linux]` — teste de RAM em espaço de usuário; par funcional do HCI MemTest do lado Linux.
+- **Recuperação / Backup**: Sergei Strelec WinPE `[Bootável]` — WinPE de terceiros como ferramenta de prateleira, só do site oficial com checksum conferido; não serve de base para serviço cobrado.
+- `indice_geral-v1.5.md` renomeado para `indice_geral-v1.6.md`; nova entrada em **Documentação por ferramenta** agrupando os testes de RAM por ambiente (sem SO, Linux vivo, Windows vivo).
+- 3 novas entradas em `manifest/catalogo_manual.json` (118 → 121), no padrão das anteriores (`arquivo` vazio por não haver binário em `FERRAMENTAS/`, `sha256` do próprio `.md`, `tipo` vazio).
+- `files_health/hashes_sha256.txt` regenerado — 97 → 100 documentos hasheados.
+
+### Conhecido
+- `manifest/bateria_winpe.json` ainda não inclui as 3 entradas novas; pela triagem, as três seriam descartadas da bateria (duas bootáveis, uma só Linux).
+
+---
+
 ## [1.8] — Setembro/2026
 
 ### Adicionado
