@@ -1,0 +1,5347 @@
+{
+  "gerado_em": "2026-09-23",
+  "etapas": "1-3 (triagem, empacotamento, análise estática)",
+  "itens": {
+    "hwinfo": {
+      "nome": "HWiNFO",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "hwi64_846.exe",
+          "empacotamento": "inno_nao_suportado",
+          "inno": "6.3.0",
+          "tamanho_mb": 19.5,
+          "sha256": "4D03CD106830642BDC4FEF1D5F9282F2420D96D3187A892C46F9AA104F5DB2FA"
+        }
+      ],
+      "executaveis": [],
+      "dlls_externas": [],
+      "needs_estaticos": [],
+      "veredito_estatico": "bloqueado",
+      "notas": [
+        "Inno Setup 6.3.0 não suportado pelo innoextract instalado"
+      ]
+    },
+    "hwmonitor": {
+      "nome": "HWMonitor",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "hwmonitor_1.63.exe",
+          "empacotamento": "inno_nao_suportado",
+          "inno": "6.3.0",
+          "tamanho_mb": 2.9,
+          "sha256": "6C8FABA4768754C3364E7C400A9D79CCBECE156087BE607583619F11A09CB064"
+        }
+      ],
+      "executaveis": [],
+      "dlls_externas": [],
+      "needs_estaticos": [],
+      "veredito_estatico": "bloqueado",
+      "notas": [
+        "Inno Setup 6.3.0 não suportado pelo innoextract instalado"
+      ]
+    },
+    "cpuz": {
+      "nome": "CPU-Z",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "cpu-z_2.19-en.exe",
+          "empacotamento": "inno_nao_suportado",
+          "inno": "6.3.0",
+          "tamanho_mb": 4.6,
+          "sha256": "96AC7864F87A133864293E92F6A3AB4484685470E5BDE82CC8EAF1F974741775"
+        }
+      ],
+      "executaveis": [],
+      "dlls_externas": [],
+      "needs_estaticos": [],
+      "veredito_estatico": "bloqueado",
+      "notas": [
+        "Inno Setup 6.3.0 não suportado pelo innoextract instalado"
+      ]
+    },
+    "crystaldiskinfo": {
+      "nome": "CrystalDiskInfo",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "CrystalDiskInfo9_8_0.exe",
+          "empacotamento": "inno",
+          "inno": "6.1.0",
+          "tamanho_mb": 5.8,
+          "sha256": "D7357C9A107115C7E6C2B0A291BE30609B54966316FDD1A329B0334807B2AD4C",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "app/DiskInfo32.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "app/DiskInfo64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "app/DiskInfoA64.exe",
+          "arquitetura": "arm64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "app/CdiResource/AlertMail.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": true,
+          "principal": false
+        },
+        {
+          "exe": "app/CdiResource/AlertMail4.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": true,
+          "principal": false
+        },
+        {
+          "exe": "app/CdiResource/AlertMail48.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": true,
+          "principal": false
+        },
+        {
+          "exe": "app/CdiResource/opus/opusdec.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "comctl32.dll",
+        "crypt32.dll",
+        "gdi32.dll",
+        "gdiplus.dll",
+        "kernel32.dll",
+        "mscoree.dll",
+        "msvcrt.dll",
+        "ole32.dll",
+        "oleacc.dll",
+        "oleaut32.dll",
+        "oledlg.dll",
+        "setupapi.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "user32.dll",
+        "uxtheme.dll",
+        "version.dll",
+        "winmm.dll",
+        "winspool.drv",
+        "wintrust.dll"
+      ],
+      "needs_estaticos": [
+        "wmi"
+      ],
+      "veredito_estatico": "provavel_com_componente",
+      "notas": [
+        "pacote traz variantes 32 e 64 bits; usar a de 64",
+        "wmi é heurística (string root\\cimv2 no binário)",
+        "auxiliares .NET (não bloqueiam a ferramenta): AlertMail.exe, AlertMail4.exe, AlertMail48.exe"
+      ]
+    },
+    "crystaldiskmark": {
+      "nome": "CrystalDiskMark",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "CrystalDiskMark9_0_2.exe",
+          "empacotamento": "inno",
+          "inno": "6.1.0",
+          "tamanho_mb": 4.3,
+          "sha256": "AC7BB07C02BF26786CE194D0455B65C194F743FF1E887CDAF03AF4DE88AA2567",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "app/DiskMark32.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "app/DiskMark64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "app/DiskMarkA64.exe",
+          "arquitetura": "arm64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "app/CdmResource/DiskSpd/DiskSpd32.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "app/CdmResource/DiskSpd/DiskSpd32L.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "app/CdmResource/DiskSpd/DiskSpd64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "app/CdmResource/DiskSpd/DiskSpd64L.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "app/CdmResource/DiskSpd/DiskSpdA64.exe",
+          "arquitetura": "arm64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "comctl32.dll",
+        "gdi32.dll",
+        "gdiplus.dll",
+        "kernel32.dll",
+        "ole32.dll",
+        "oleacc.dll",
+        "oleaut32.dll",
+        "powrprof.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "user32.dll",
+        "uxtheme.dll",
+        "version.dll",
+        "winmm.dll",
+        "winspool.drv"
+      ],
+      "needs_estaticos": [
+        "wmi"
+      ],
+      "veredito_estatico": "provavel_com_componente",
+      "notas": [
+        "pacote traz variantes 32 e 64 bits; usar a de 64",
+        "wmi é heurística (string root\\cimv2 no binário)"
+      ]
+    },
+    "crystalmarkretro": {
+      "nome": "CrystalMark Retro",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "CrystalMarkRetro2_1_0.exe",
+          "empacotamento": "inno",
+          "inno": "6.1.0",
+          "tamanho_mb": 11.7,
+          "sha256": "CCEFA82557CCD4DBA3569959A826FE80FFA6401DF0C8AC4CDED19F23CAF6A5F4",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "app/CrystalMarkRetro32.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "app/CrystalMarkRetro64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "app/CrystalMarkRetroA64.exe",
+          "arquitetura": "arm64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "app/Resource/Benchmark/CMRCPU32.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "app/Resource/Benchmark/CMRCPU64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "app/Resource/Benchmark/CMRCPUA64.exe",
+          "arquitetura": "arm64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "app/Resource/Benchmark/CMRGDI32.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "app/Resource/Benchmark/CMRGDI64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "app/Resource/Benchmark/CMRGDIA64.exe",
+          "arquitetura": "arm64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "app/Resource/Benchmark/DiskSpd/DiskSpd32.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "app/Resource/Benchmark/DiskSpd/DiskSpd32L.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "app/Resource/Benchmark/DiskSpd/DiskSpd64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "app/Resource/Benchmark/DiskSpd/DiskSpd64L.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "app/Resource/Benchmark/DiskSpd/DiskSpdA64.exe",
+          "arquitetura": "arm64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "app/Resource/Benchmark/HiyoGL/CMROGL32.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "app/Resource/Benchmark/HiyoGL/CMROGL64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "app/Resource/Benchmark/HiyoGL/CMROGLA64.exe",
+          "arquitetura": "arm64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "comctl32.dll",
+        "gdi32.dll",
+        "glu32.dll",
+        "kernel32.dll",
+        "msimg32.dll",
+        "ole32.dll",
+        "oleacc.dll",
+        "oleaut32.dll",
+        "oledlg.dll",
+        "opengl32.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "user32.dll",
+        "uxtheme.dll",
+        "version.dll",
+        "wininet.dll",
+        "winmm.dll",
+        "winspool.drv"
+      ],
+      "needs_estaticos": [
+        "wmi"
+      ],
+      "veredito_estatico": "provavel_com_componente",
+      "notas": [
+        "pacote traz variantes 32 e 64 bits; usar a de 64",
+        "wmi é heurística (string root\\cimv2 no binário)"
+      ]
+    },
+    "furmark": {
+      "nome": "FurMark",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "FurMark_2.10.2_Win64_Setup.exe",
+          "empacotamento": "inno_nao_suportado",
+          "inno": "6.5.2",
+          "tamanho_mb": 32.4,
+          "sha256": "88C07E0C674676BB486D3D46D73605925983B3AFA8F292A2D9707AD919A3EA9B"
+        }
+      ],
+      "executaveis": [],
+      "dlls_externas": [],
+      "needs_estaticos": [],
+      "veredito_estatico": "bloqueado",
+      "notas": [
+        "Inno Setup 6.5.2 não suportado pelo innoextract instalado"
+      ]
+    },
+    "prime95": {
+      "nome": "Prime95",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "prime95.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 8.4,
+          "sha256": "D9475F2FF3F4A6A701ABC49A86A66126CB48ABD10BDA6FA87039D98FA8756BCA",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "prime95.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "bcrypt.dll",
+        "comctl32.dll",
+        "crypt32.dll",
+        "gdi32.dll",
+        "gdiplus.dll",
+        "imm32.dll",
+        "kernel32.dll",
+        "msimg32.dll",
+        "msvcrt.dll",
+        "normaliz.dll",
+        "ole32.dll",
+        "oleacc.dll",
+        "oleaut32.dll",
+        "oledlg.dll",
+        "psapi.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "user32.dll",
+        "uxtheme.dll",
+        "wininet.dll",
+        "winmm.dll",
+        "winspool.drv",
+        "wldap32.dll",
+        "ws2_32.dll"
+      ],
+      "needs_estaticos": [],
+      "veredito_estatico": "provavel_base"
+    },
+    "memtest86": {
+      "nome": "MemTest86",
+      "triagem": "descartado",
+      "motivo": "ambiente bootável (vai para a biblioteca do Ventoy)"
+    },
+    "hcimemtest": {
+      "nome": "HCI MemTest",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "MemTest.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 0.0,
+          "sha256": "08960F448F4514E7C2D388420560D7D03F5F0A54EC8F9663D66C887B8E4679E6",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "memtest.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "comctl32.dll",
+        "kernel32.dll",
+        "mfc42.dll",
+        "msvcrt.dll",
+        "shell32.dll",
+        "user32.dll"
+      ],
+      "needs_estaticos": [
+        "wow64"
+      ],
+      "veredito_estatico": "provavel_nao_roda",
+      "notas": [
+        "executável principal só em 32 bits; WinPE amd64 não traz WoW64"
+      ]
+    },
+    "testmem5": {
+      "nome": "TestMem5",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "TestMem5.7z",
+          "empacotamento": "7z",
+          "tamanho_mb": 0.0,
+          "sha256": "05FFB5BBAA0C2243BF25664049C7AA3615A77BD5036497EF845FC8ED50128C12",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "TM5.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "comctl32.dll",
+        "gdi32.dll",
+        "kernel32.dll",
+        "ntdll.dll",
+        "user32.dll"
+      ],
+      "needs_estaticos": [
+        "wow64"
+      ],
+      "veredito_estatico": "provavel_nao_roda",
+      "notas": [
+        "executável principal só em 32 bits; WinPE amd64 não traz WoW64"
+      ]
+    },
+    "throttlestop": {
+      "nome": "ThrottleStop",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "ThrottleStop_9.7.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 1.7,
+          "sha256": "D83D3EDBD037A926D9319C6F4DB62F84657A39D47BD4FAE5FA26F692790E800D",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "ThrottleStop.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "gdi32.dll",
+        "gdiplus.dll",
+        "imm32.dll",
+        "kernel32.dll",
+        "msimg32.dll",
+        "ole32.dll",
+        "oleacc.dll",
+        "oleaut32.dll",
+        "oledlg.dll",
+        "powrprof.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "user32.dll",
+        "uxtheme.dll",
+        "winmm.dll",
+        "winspool.drv"
+      ],
+      "needs_estaticos": [
+        "wow64"
+      ],
+      "veredito_estatico": "provavel_nao_roda",
+      "notas": [
+        "executável principal só em 32 bits; WinPE amd64 não traz WoW64"
+      ]
+    },
+    "universalx86tuningutility": {
+      "nome": "Universal x86 Tuning Utility",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "Universal.x86.Tuning.Utility.V2.Portable.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 24.5,
+          "sha256": "0F4E5B344698D8B9EDCBBE7A4B8E43C1A76D90D5C2E5CD54B42185DCA3E80FA2",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "net8.0-windows10.0.22621.0/Universal x86 Tuning Utility.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "net8.0-windows10.0.22621.0/Assets/Intel/KX/KX.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "net8.0-windows10.0.22621.0/Assets/Intel/MSR/msr-cmd.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "net8.0-windows10.0.22621.0/Assets/Intel/MSR/winio-drv.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "net8.0-windows10.0.22621.0/Assets/Stress-Test/AVX2 Stress Test.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "bcrypt.dll",
+        "comctl32.dll",
+        "d3d10.dll",
+        "d3d11.dll",
+        "d3d12.dll",
+        "d3d9.dll",
+        "d3dcompiler_47.dll",
+        "d3dx10_42.dll",
+        "d3dx11_42.dll",
+        "ddraw.dll",
+        "dwmapi.dll",
+        "dxgi.dll",
+        "gdi32.dll",
+        "hal.dll",
+        "imm32.dll",
+        "kernelbase.dll",
+        "magnification.dll",
+        "mscoree.dll",
+        "msvcp140.dll",
+        "msvcrt.dll",
+        "netapi32.dll",
+        "ntdll.dll",
+        "ntoskrnl.exe",
+        "ole32.dll",
+        "oleaut32.dll",
+        "psapi.dll",
+        "rpcrt4.dll",
+        "setupapi.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "user32.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll",
+        "version.dll",
+        "winmm.dll",
+        "winspool.drv"
+      ],
+      "needs_estaticos": [
+        "kernel-driver"
+      ],
+      "veredito_estatico": "incerto",
+      "notas": [
+        ".NET single-file autocontido: não usa WinPE-NetFx, validar no smoke test",
+        "driver de kernel: carregar com drvload no smoke test"
+      ]
+    },
+    "hardinfo2": {
+      "nome": "Hardinfo2",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "gsmartcontrol": {
+      "nome": "GSmartControl",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "gsmartcontrol-2.0.2-win64.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 35.7,
+          "sha256": "A9096F11E2A3BEEBE906FD47AD4484C384F57FD8862F28BC75B82AE9C38F20A3",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "gsmartcontrol-2.0.2-win64/gsmartcontrol.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "gsmartcontrol-2.0.2-win64/gspawn-win64-helper-console.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "gsmartcontrol-2.0.2-win64/gspawn-win64-helper.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "gsmartcontrol-2.0.2-win64/gtk-query-settings.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "gsmartcontrol-2.0.2-win64/smartctl-nc.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "gsmartcontrol-2.0.2-win64/smartctl.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "bcrypt.dll",
+        "comctl32.dll",
+        "comdlg32.dll",
+        "crypt32.dll",
+        "dbghelp.dll",
+        "dnsapi.dll",
+        "dwmapi.dll",
+        "dwrite.dll",
+        "gdi32.dll",
+        "gdiplus.dll",
+        "hid.dll",
+        "imm32.dll",
+        "iphlpapi.dll",
+        "kernel32.dll",
+        "libnghttp3-9.dll",
+        "libssl-3-x64.dll",
+        "msimg32.dll",
+        "msvcrt.dll",
+        "ntdll.dll",
+        "ole32.dll",
+        "oleaut32.dll",
+        "opengl32.dll",
+        "rpcrt4.dll",
+        "setupapi.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "user32.dll",
+        "userenv.dll",
+        "usp10.dll",
+        "winmm.dll",
+        "winspool.drv",
+        "wldap32.dll",
+        "ws2_32.dll"
+      ],
+      "needs_estaticos": [
+        "wmi"
+      ],
+      "veredito_estatico": "provavel_com_componente",
+      "notas": [
+        "wmi é heurística (string root\\cimv2 no binário)"
+      ]
+    },
+    "h2testw": {
+      "nome": "h2testw",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "h2testw_1.4",
+          "empacotamento": "pasta"
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "h2testw.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "comctl32.dll",
+        "comdlg32.dll",
+        "gdi32.dll",
+        "kernel32.dll",
+        "ole32.dll",
+        "oleacc.dll",
+        "oleaut32.dll",
+        "oledlg.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "user32.dll",
+        "winspool.drv"
+      ],
+      "needs_estaticos": [
+        "wow64"
+      ],
+      "veredito_estatico": "provavel_nao_roda",
+      "notas": [
+        "executável principal só em 32 bits; WinPE amd64 não traz WoW64"
+      ]
+    },
+    "lact": {
+      "nome": "LACT",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "rtss": {
+      "nome": "RTSS",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "[Guru3D]-RTSSSetup737Build28314.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 17.2,
+          "sha256": "9B084A8CB3E53EC1A673894D0B66E22B16C9FD8785636B020B2D422F3F2A820E",
+          "extraido": true,
+          "aninhados": [
+            {
+              "aninhado": "RTSSSetup737.exe",
+              "empacotamento": "nsis",
+              "extraido": true
+            }
+          ]
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "RTSSSetup737.exe.extraido/DesktopOverlayHost.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "RTSSSetup737.exe.extraido/DesktopOverlayHost64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "RTSSSetup737.exe.extraido/DesktopOverlayHostLoader.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "RTSSSetup737.exe.extraido/EncoderServer.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "RTSSSetup737.exe.extraido/EncoderServer64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "RTSSSetup737.exe.extraido/RTSS.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "RTSSSetup737.exe.extraido/RTSSHooksLoader.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "RTSSSetup737.exe.extraido/RTSSHooksLoader64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "RTSSSetup737.exe.extraido/Plugins/Client/LHMDataProvider/LHMDataProvider.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "RTSSSetup737.exe.extraido/Plugins/Client/PresentMonDataProvider/PresentMon-1.10.0-x64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "RTSSSetup737.exe.extraido/Plugins/Client/PresentMonDataProvider/PresentMon-2.3.1-x64-DLSS4.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "RTSSSetup737.exe.extraido/Plugins/Client/PresentMonDataProvider/PresentMon-2.3.1-x64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "RTSSSetup737.exe.extraido/Plugins/Client/PresentMonDataProvider/PresentMonDataProvider.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "RTSSSetup737.exe.extraido/Redist/dxwebsetup.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "RTSSSetup737.exe.extraido/SDK/Include/LHM/ImporterTest.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "RTSSSetup737.exe.extraido/SDK/Samples/Pipe/RTSSFrametimePipeSample/Release/RTSSFrametimePipeSample.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "RTSSSetup737.exe.extraido/SDK/Samples/SharedMemory/RTSSSharedMemorySample/Release/RTSSSharedMemorySample.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "comctl32.dll",
+        "d3d10.dll",
+        "d3d11.dll",
+        "d3d12.dll",
+        "d3d9.dll",
+        "dinput8.dll",
+        "dsound.dll",
+        "dxgi.dll",
+        "dxva2.dll",
+        "gdi32.dll",
+        "glu32.dll",
+        "hal.dll",
+        "iphlpapi.dll",
+        "kernel32.dll",
+        "mfc140.dll",
+        "mscoree.dll",
+        "msimg32.dll",
+        "msvcp110.dll",
+        "msvcp140.dll",
+        "msvcr110.dll",
+        "msvfw32.dll",
+        "ntoskrnl.exe",
+        "nvcuda.dll",
+        "ole32.dll",
+        "oleaut32.dll",
+        "opencl.dll",
+        "opengl32.dll",
+        "openvideo.dll",
+        "openvideo64.dll",
+        "pdh.dll",
+        "psapi.dll",
+        "setupapi.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "tdh.dll",
+        "user32.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll",
+        "version.dll",
+        "vulkan-1.dll",
+        "wininet.dll",
+        "winmm.dll",
+        "ws2_32.dll"
+      ],
+      "needs_estaticos": [
+        "kernel-driver"
+      ],
+      "veredito_estatico": "incerto",
+      "notas": [
+        "pacote traz variantes 32 e 64 bits; usar a de 64",
+        "driver de kernel: carregar com drvload no smoke test"
+      ]
+    },
+    "mangohud": {
+      "nome": "MangoHud",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "MangoHud-master.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 14.3,
+          "sha256": "4131F9BBEC9E96858D5001F95D4B7C3231F0592506CBC4D198C684A2A2440B8D",
+          "extraido": true
+        }
+      ],
+      "executaveis": [],
+      "dlls_externas": [],
+      "needs_estaticos": [
+        "python"
+      ],
+      "veredito_estatico": "precisa_runtime"
+    },
+    "goverlay": {
+      "nome": "GOverlay",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "autoruns": {
+      "nome": "Autoruns",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "Autoruns.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 2.8,
+          "sha256": "B04D2AC6DCC287A4B01A9CDC5BD9580A38DF8A3379E03698CF7B888CDAB7EA0F",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "Autoruns.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Autoruns64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Autoruns64a.exe",
+          "arquitetura": "arm64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "autorunsc.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "autorunsc64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "autorunsc64a.exe",
+          "arquitetura": "arm64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "comctl32.dll",
+        "comdlg32.dll",
+        "crypt32.dll",
+        "dwmapi.dll",
+        "gdi32.dll",
+        "kernel32.dll",
+        "msimg32.dll",
+        "ntdll.dll",
+        "ole32.dll",
+        "oleaut32.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "user32.dll",
+        "uxtheme.dll",
+        "version.dll",
+        "winhttp.dll",
+        "wintrust.dll"
+      ],
+      "needs_estaticos": [],
+      "veredito_estatico": "provavel_base",
+      "notas": [
+        "pacote traz variantes 32 e 64 bits; usar a de 64"
+      ]
+    },
+    "processexplorer": {
+      "nome": "Process Explorer",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "ProcessExplorer.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 3.3,
+          "sha256": "47FF65944E87280A0D40E6EB7A6157F13F46D605DF44FF794784B54D56795AA6",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "procexp.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "procexp64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "procexp64a.exe",
+          "arquitetura": "arm64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "aclui.dll",
+        "advapi32.dll",
+        "comctl32.dll",
+        "comdlg32.dll",
+        "credui.dll",
+        "crypt32.dll",
+        "dwmapi.dll",
+        "gdi32.dll",
+        "iphlpapi.dll",
+        "kernel32.dll",
+        "mpr.dll",
+        "msimg32.dll",
+        "ntdll.dll",
+        "ole32.dll",
+        "oleaut32.dll",
+        "powrprof.dll",
+        "setupapi.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "user32.dll",
+        "uxtheme.dll",
+        "version.dll",
+        "winhttp.dll",
+        "ws2_32.dll",
+        "wtsapi32.dll"
+      ],
+      "needs_estaticos": [],
+      "veredito_estatico": "provavel_base",
+      "notas": [
+        "pacote traz variantes 32 e 64 bits; usar a de 64"
+      ]
+    },
+    "processmonitor": {
+      "nome": "Process Monitor",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "ProcessMonitor.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 2.9,
+          "sha256": "39007CC8EA844DD023BE9E2C1C03EE1BCCA7B417298B277CBA712D253F8F167A",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "Procmon.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Procmon64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Procmon64a.exe",
+          "arquitetura": "arm64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "comctl32.dll",
+        "comdlg32.dll",
+        "dwmapi.dll",
+        "fltlib.dll",
+        "gdi32.dll",
+        "kernel32.dll",
+        "ntdll.dll",
+        "ole32.dll",
+        "oleaut32.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "user32.dll",
+        "uxtheme.dll",
+        "version.dll",
+        "ws2_32.dll"
+      ],
+      "needs_estaticos": [],
+      "veredito_estatico": "provavel_base",
+      "notas": [
+        "pacote traz variantes 32 e 64 bits; usar a de 64"
+      ]
+    },
+    "sysinternalssuite": {
+      "nome": "Sysinternals Suite",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "SysinternalsSuite.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 167.8,
+          "sha256": "E7DA9BF052E03968AEA666877937037522FF447B838568C6B1BE3EA24E3062E9",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "ADExplorer.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "ADExplorer64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "ADInsight.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "ADInsight64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "AccessEnum.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Autologon.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Autologon64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Autoruns.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Autoruns64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Bginfo.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Bginfo64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "CPUSTRES.EXE",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "CPUSTRES64.EXE",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Cacheset.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Cacheset64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Clockres.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Clockres64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Contig.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Contig64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Coreinfo.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Coreinfo64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "CoreinfoEx.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "CoreinfoEx64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Dbgview.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Desktops.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Desktops64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "DiskView.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "DiskView64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Diskmon.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Diskmon64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "FindLinks.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "FindLinks64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Listdlls.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Listdlls64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "LoadOrd.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "LoadOrd64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "LoadOrdC.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "LoadOrdC64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Procmon.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "Procmon64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "PsExec.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "PsExec64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "PsGetsid.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "PsGetsid64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "PsInfo.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "PsInfo64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "PsLoggedon.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "PsLoggedon64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "PsService.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "PsService64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "aclui.dll",
+        "activeds.dll",
+        "advapi32.dll",
+        "bcrypt.dll",
+        "cabinet.dll",
+        "comctl32.dll",
+        "comdlg32.dll",
+        "credui.dll",
+        "crypt32.dll",
+        "dwmapi.dll",
+        "fltlib.dll",
+        "gdi32.dll",
+        "gdiplus.dll",
+        "imagehlp.dll",
+        "imm32.dll",
+        "iphlpapi.dll",
+        "kernel32.dll",
+        "mpr.dll",
+        "msi.dll",
+        "msimg32.dll",
+        "netapi32.dll",
+        "ntdll.dll",
+        "odbc32.dll",
+        "ole32.dll",
+        "oleacc.dll",
+        "oleaut32.dll",
+        "pdh.dll",
+        "powrprof.dll",
+        "psapi.dll",
+        "rpcrt4.dll",
+        "secur32.dll",
+        "setupapi.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "snmpapi.dll",
+        "tdh.dll",
+        "user32.dll",
+        "userenv.dll",
+        "uxtheme.dll",
+        "version.dll",
+        "vssapi.dll",
+        "wevtapi.dll",
+        "winhttp.dll",
+        "winmm.dll",
+        "winspool.drv",
+        "wintrust.dll",
+        "wldap32.dll",
+        "ws2_32.dll",
+        "wtsapi32.dll"
+      ],
+      "needs_estaticos": [
+        "wmi"
+      ],
+      "veredito_estatico": "provavel_com_componente",
+      "executaveis_total": 149,
+      "notas": [
+        "pacote traz variantes 32 e 64 bits; usar a de 64",
+        ".NET single-file autocontido: não usa WinPE-NetFx, validar no smoke test",
+        "wmi é heurística (string root\\cimv2 no binário)"
+      ]
+    },
+    "systeminformer": {
+      "nome": "System Informer",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "systeminformer-3.2.25011-release-setup.exe",
+          "empacotamento": "instalador_opaco",
+          "tamanho_mb": 22.6,
+          "sha256": "7612D5E44A5A392AB9F0D1B5B8A79BDA3CDBE19848E8EE9EC23909AAF3DAAD45"
+        }
+      ],
+      "executaveis": [],
+      "dlls_externas": [],
+      "needs_estaticos": [],
+      "veredito_estatico": "bloqueado",
+      "notas": [
+        "instalador não extraível estaticamente"
+      ]
+    },
+    "oosu10": {
+      "nome": "OOSU10",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "OOSU10.exe",
+          "empacotamento": "executavel",
+          "tamanho_mb": 76.1,
+          "sha256": "01D64C068D6B949FF8B919C30D82AE0007AE3AD35006F63F04880005A33D51E9"
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "OOSU10.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "kernel32.dll",
+        "ole32.dll",
+        "oleaut32.dll",
+        "shell32.dll",
+        "user32.dll",
+        "version.dll"
+      ],
+      "needs_estaticos": [],
+      "veredito_estatico": "provavel_base",
+      "notas": [
+        ".NET single-file autocontido: não usa WinPE-NetFx, validar no smoke test"
+      ]
+    },
+    "configuredefender": {
+      "nome": "ConfigureDefender",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "ConfigureDefender-master.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 30.0,
+          "sha256": "FCBE51D7EDA721D7D4CBF9283D2EFE45021AEF8D4898A5FB8134B38FA5FCA513",
+          "extraido": true,
+          "aninhados": [
+            {
+              "aninhado": "ConfigureDefender-master/ConfigureDefender.exe",
+              "empacotamento": "nsis",
+              "extraido": true
+            },
+            {
+              "aninhado": "ConfigureDefender-master/H_C_HardeningTools/H_C_HardeningTools_3000.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ConfigureDefender-master/H_C_HardeningTools/H_C_HardeningTools_3001.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ConfigureDefender-master/H_C_HardeningTools/H_C_HardeningTools_3011.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            }
+          ]
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "ConfigureDefender-master/H_C_HardeningTools/H_C_HardeningTools_3000.zip.extraido/ConfigureDefender_3111.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "ConfigureDefender-master/H_C_HardeningTools/H_C_HardeningTools_3000.zip.extraido/Documents_AntiExploit_2011.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "ConfigureDefender-master/H_C_HardeningTools/H_C_HardeningTools_3000.zip.extraido/FirewallHardening_3000.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "ConfigureDefender-master/H_C_HardeningTools/H_C_HardeningTools_3000.zip.extraido/RunBySmartscreen_4111.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "ConfigureDefender-master/H_C_HardeningTools/H_C_HardeningTools_3001.zip.extraido/ConfigureDefender_4000.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "ConfigureDefender-master/H_C_HardeningTools/H_C_HardeningTools_3001.zip.extraido/Documents_AntiExploit_2011.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "ConfigureDefender-master/H_C_HardeningTools/H_C_HardeningTools_3001.zip.extraido/FirewallHardening_3001.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "ConfigureDefender-master/H_C_HardeningTools/H_C_HardeningTools_3001.zip.extraido/RunBySmartscreen_5011.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "ConfigureDefender-master/H_C_HardeningTools/H_C_HardeningTools_3011.zip.extraido/ConfigureDefender_4001.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "ConfigureDefender-master/H_C_HardeningTools/H_C_HardeningTools_3011.zip.extraido/Documents_AntiExploit_2011.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "ConfigureDefender-master/H_C_HardeningTools/H_C_HardeningTools_3011.zip.extraido/FirewallHardening_3001.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "ConfigureDefender-master/H_C_HardeningTools/H_C_HardeningTools_3011.zip.extraido/RunBySmartscreen_5011.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "comctl32.dll",
+        "gdi32.dll",
+        "kernel32.dll",
+        "ole32.dll",
+        "shell32.dll",
+        "user32.dll"
+      ],
+      "needs_estaticos": [
+        "wow64"
+      ],
+      "veredito_estatico": "provavel_nao_roda",
+      "notas": [
+        "executável principal só em 32 bits; WinPE amd64 não traz WoW64"
+      ]
+    },
+    "bloatynosy": {
+      "nome": "BloatyNosy",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "Bloatynosy.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 0.1,
+          "sha256": "AFB079B1B556970E841D9B2685793BD553CD8A9666CC87B339B508D816C05A2C",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "Bloatynosy.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": true,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [],
+      "needs_estaticos": [
+        "dotnet"
+      ],
+      "veredito_estatico": "provavel_com_componente"
+    },
+    "powertoys": {
+      "nome": "PowerToys",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "PowerToysSetup-0.99.1-x64.exe",
+          "empacotamento": "sfx",
+          "tamanho_mb": 376.3,
+          "sha256": "29210F756B93DC1871694FC2A6BE89AB0BC76227F66FFBA0F5A80F408E576CDD",
+          "extraido": true
+        }
+      ],
+      "executaveis": [],
+      "dlls_externas": [],
+      "needs_estaticos": [],
+      "veredito_estatico": "sem_pe_analisavel"
+    },
+    "bleachbit": {
+      "nome": "BleachBit",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "BleachBit-5.0.2-setup.exe",
+          "empacotamento": "nsis",
+          "tamanho_mb": 15.7,
+          "sha256": "14BA97054FD77564BF8E050916DBA44235C0E32EB60FC9C20CCE3C9B844028DD",
+          "extraido": true,
+          "aninhados": [
+            {
+              "aninhado": "library.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            }
+          ]
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "bleachbit.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "bleachbit_console.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "gspawn-win32-helper-console.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "gspawn-win32-helper.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "bcrypt.dll",
+        "comctl32.dll",
+        "comdlg32.dll",
+        "crypt32.dll",
+        "dnsapi.dll",
+        "dwmapi.dll",
+        "dwrite.dll",
+        "gdi32.dll",
+        "hid.dll",
+        "imm32.dll",
+        "iphlpapi.dll",
+        "kernel32.dll",
+        "msimg32.dll",
+        "ole32.dll",
+        "oleaut32.dll",
+        "opengl32.dll",
+        "setupapi.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "user32.dll",
+        "version.dll",
+        "winmm.dll",
+        "winspool.drv",
+        "ws2_32.dll"
+      ],
+      "needs_estaticos": [
+        "wow64"
+      ],
+      "veredito_estatico": "provavel_nao_roda",
+      "notas": [
+        "executável principal só em 32 bits; WinPE amd64 não traz WoW64"
+      ]
+    },
+    "ccleaner": {
+      "nome": "CCleaner",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "ccsetup_online_setup.exe",
+          "empacotamento": "instalador_online",
+          "tamanho_mb": 1.7,
+          "sha256": "4A873FFEDFAA2DAED1ABDE12D8E42307C9842A842E2E554B497A08EB24A25A97"
+        }
+      ],
+      "executaveis": [],
+      "dlls_externas": [],
+      "needs_estaticos": [],
+      "veredito_estatico": "bloqueado",
+      "notas": [
+        "só existe instalador online"
+      ]
+    },
+    "tronscript": {
+      "nome": "TronScript",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "Tron v12.0.8 (2025-01-09).exe",
+          "empacotamento": "instalador_opaco",
+          "tamanho_mb": 379.8,
+          "sha256": "E71BE80F22465A412E450A456FDBC4C110A96F9A0097B85A8DD7438C53BE8194"
+        }
+      ],
+      "executaveis": [],
+      "dlls_externas": [],
+      "needs_estaticos": [],
+      "veredito_estatico": "bloqueado",
+      "notas": [
+        "instalador não extraível estaticamente"
+      ]
+    },
+    "winutil": {
+      "nome": "WinUtil",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "winutil-main.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 3.0,
+          "sha256": "0B5C58CD11F29B01FE024032734D1C70505F34D7C1EF0B5E51EF7060BD139E84",
+          "extraido": true
+        }
+      ],
+      "executaveis": [],
+      "dlls_externas": [],
+      "needs_estaticos": [
+        "powershell"
+      ],
+      "veredito_estatico": "provavel_com_componente"
+    },
+    "htop": {
+      "nome": "Htop",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "btop": {
+      "nome": "Btop++",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "nvtop": {
+      "nome": "Nvtop",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "cpux": {
+      "nome": "CPU-X",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "lmsensors": {
+      "nome": "LM-Sensors",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "smartmontools": {
+      "nome": "Smartmontools",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "iotop": {
+      "nome": "Iotop",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "powertop": {
+      "nome": "Powertop",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "gdu": {
+      "nome": "GDU",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "ncdu": {
+      "nome": "Ncdu",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "tmux": {
+      "nome": "Tmux",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "inxi": {
+      "nome": "Inxi",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "journalctl": {
+      "nome": "Journalctl",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "dmesg": {
+      "nome": "Dmesg",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "stacer": {
+      "nome": "Stacer",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "missioncenter": {
+      "nome": "Mission Center",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "netdata": {
+      "nome": "Netdata",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "lazydocker": {
+      "nome": "LazyDocker",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "timeshift": {
+      "nome": "Timeshift",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "ventoy": {
+      "nome": "Ventoy",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "ventoy",
+          "empacotamento": "pasta"
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "ventoy-1.1.10/Ventoy2Disk.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "ventoy-1.1.10/VentoyPlugson.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "ventoy-1.1.10/VentoyVlnk.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "ventoy-1.1.10/altexe/Ventoy2Disk_ARM.exe",
+          "arquitetura": "0x1c4",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "ventoy-1.1.10/altexe/Ventoy2Disk_ARM64.exe",
+          "arquitetura": "arm64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "ventoy-1.1.10/altexe/Ventoy2Disk_X64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "ventoy-1.1.10/altexe/VentoyPlugson_X64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "comdlg32.dll",
+        "gdi32.dll",
+        "kernel32.dll",
+        "ole32.dll",
+        "shell32.dll",
+        "user32.dll",
+        "ws2_32.dll"
+      ],
+      "needs_estaticos": [],
+      "veredito_estatico": "provavel_base",
+      "notas": [
+        "principal da raiz é 32 bits, mas há executáveis 64 bits em subpasta: ventoy-1.1.10/altexe/Ventoy2Disk_X64.exe, ventoy-1.1.10/altexe/VentoyPlugson_X64.exe"
+      ]
+    },
+    "rufus": {
+      "nome": "Rufus",
+      "triagem": "pendente",
+      "motivo": "sem binário em FERRAMENTAS"
+    },
+    "testdisk": {
+      "nome": "TestDisk",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "testdisk-7.2.win64.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 26.1,
+          "sha256": "E97E203CE77B6B1A3A37D01BECCF069DC6C4632B579FFBB82AE739CDDA229F38",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "testdisk-7.2/fidentify_win.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "testdisk-7.2/photorec_win.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "testdisk-7.2/qphotorec_win.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "testdisk-7.2/testdisk_win.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "d3d11.dll",
+        "dwmapi.dll",
+        "dxgi.dll",
+        "gdi32.dll",
+        "imm32.dll",
+        "kernel32.dll",
+        "mpr.dll",
+        "msvcrt.dll",
+        "netapi32.dll",
+        "ntdll.dll",
+        "ole32.dll",
+        "oleaut32.dll",
+        "shell32.dll",
+        "user32.dll",
+        "userenv.dll",
+        "uxtheme.dll",
+        "version.dll",
+        "winmm.dll",
+        "ws2_32.dll",
+        "wtsapi32.dll"
+      ],
+      "needs_estaticos": [],
+      "veredito_estatico": "provavel_base"
+    },
+    "recuva": {
+      "nome": "Recuva",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "rcsetup154.exe",
+          "empacotamento": "nsis",
+          "tamanho_mb": 25.3,
+          "sha256": "D6C53877BD4F50F26BE2BD5981E36196E43E7A14617CAC80930893A24498F5E1",
+          "extraido": "parcial",
+          "erro": "ERROR: Data Error : recuva64.exe"
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "recuva.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "recuva64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "bcrypt.dll",
+        "comctl32.dll",
+        "comdlg32.dll",
+        "crypt32.dll",
+        "dnsapi.dll",
+        "gdi32.dll",
+        "gdiplus.dll",
+        "iphlpapi.dll",
+        "kernel32.dll",
+        "msimg32.dll",
+        "ntdll.dll",
+        "ole32.dll",
+        "oleacc.dll",
+        "oleaut32.dll",
+        "powrprof.dll",
+        "rpcrt4.dll",
+        "secur32.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "user32.dll",
+        "userenv.dll",
+        "uxtheme.dll",
+        "version.dll",
+        "winhttp.dll",
+        "wininet.dll",
+        "wintrust.dll",
+        "ws2_32.dll",
+        "wtsapi32.dll"
+      ],
+      "needs_estaticos": [],
+      "veredito_estatico": "provavel_base",
+      "notas": [
+        "pacote traz variantes 32 e 64 bits; usar a de 64"
+      ]
+    },
+    "partrecoverytoolkit": {
+      "nome": "PartRecoveryToolkit",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "PartRecoveryToolkit-Setup.exe",
+          "empacotamento": "inno",
+          "inno": "5.5.0",
+          "tamanho_mb": 35.7,
+          "sha256": "7E63163F5C88AF517BF64A4482C862BC62802EED43D8CEC0EE2E493C9098212F",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "app/DiskEditor.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "app/EasyFileRecovery.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "app/FilePreview.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "app/PartRecovery.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "comctl32.dll",
+        "comdlg32.dll",
+        "concrt140.dll",
+        "crypt32.dll",
+        "dnsapi.dll",
+        "gdi32.dll",
+        "gdiplus.dll",
+        "imm32.dll",
+        "iphlpapi.dll",
+        "kernel32.dll",
+        "mpr.dll",
+        "msimg32.dll",
+        "ole32.dll",
+        "oleacc.dll",
+        "oleaut32.dll",
+        "oledlg.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "user32.dll",
+        "uxtheme.dll",
+        "winmm.dll",
+        "winspool.drv",
+        "ws2_32.dll"
+      ],
+      "needs_estaticos": [
+        "wmi"
+      ],
+      "veredito_estatico": "provavel_com_componente",
+      "notas": [
+        "pacote traz variantes 32 e 64 bits; usar a de 64",
+        "wmi é heurística (string root\\cimv2 no binário)"
+      ]
+    },
+    "eraser": {
+      "nome": "Eraser",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "Eraser 6.2.0.2994.exe",
+          "empacotamento": "sfx",
+          "tamanho_mb": 8.4,
+          "sha256": "47E484261A88BA1A895699D8FF0239E1F5089B4A96128E8E610E2B41A9BD4605",
+          "extraido": true,
+          "aninhados": [
+            {
+              "aninhado": "Eraser (x64).msi",
+              "empacotamento": "msi",
+              "extraido": true
+            },
+            {
+              "aninhado": "Eraser (x86).msi",
+              "empacotamento": "msi",
+              "extraido": true
+            }
+          ]
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "Eraser (x64).msi.extraido/PFiles64/Eraser/Eraser.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": true,
+          "principal": true
+        },
+        {
+          "exe": "Eraser (x86).msi.extraido/Program Files/Eraser/Eraser.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": true,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "crypt32.dll",
+        "gdi32.dll",
+        "gdiplus.dll",
+        "imm32.dll",
+        "kernel32.dll",
+        "mscoree.dll",
+        "msimg32.dll",
+        "odbc32.dll",
+        "ole32.dll",
+        "oleacc.dll",
+        "oleaut32.dll",
+        "oledlg.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "urlmon.dll",
+        "user32.dll",
+        "uxtheme.dll",
+        "vcruntime140_1.dll",
+        "wininet.dll",
+        "winmm.dll",
+        "winspool.drv",
+        "ws2_32.dll"
+      ],
+      "needs_estaticos": [
+        "dotnet",
+        "wow64"
+      ],
+      "veredito_estatico": "provavel_nao_roda",
+      "notas": [
+        "executável principal só em 32 bits; WinPE amd64 não traz WoW64"
+      ]
+    },
+    "veracrypt": {
+      "nome": "VeraCrypt",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "VeraCrypt Portable 1.26.24.exe",
+          "empacotamento": "instalador_opaco",
+          "tamanho_mb": 38.5,
+          "sha256": "99C166A3DBAB07EE8E42AF4E42D1FD6123CA5C0825C0300F93085E81C154049A"
+        },
+        {
+          "arquivo": "VeraCrypt Setup 1.26.24.exe",
+          "empacotamento": "instalador_opaco",
+          "tamanho_mb": 38.8,
+          "sha256": "AA64496087D30F311619BB4261D72A3D2A8FB59539CEE1A74B4A65DF5196E871"
+        },
+        {
+          "arquivo": "VeraCrypt-1.26.24-x86_64.AppImage",
+          "empacotamento": "elf",
+          "tamanho_mb": 12.5,
+          "sha256": "5929B11BE36FB528A2BEBC9C6995F4A5F8FE467165ECE0C1D76B7419903FC493"
+        }
+      ],
+      "executaveis": [],
+      "dlls_externas": [],
+      "needs_estaticos": [],
+      "veredito_estatico": "bloqueado",
+      "notas": [
+        "instalador não extraível estaticamente"
+      ]
+    },
+    "winrar": {
+      "nome": "WinRAR",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "winrar-x64-720br.exe",
+          "empacotamento": "sfx",
+          "tamanho_mb": 5.8,
+          "sha256": "34FAB50C4237D3B9595E5FB35E12216EA3587C20F10B43F30FF1C1CFD4434526",
+          "extraido": "parcial",
+          "erro": "ERROR: Unsupported Method : Descript.ion"
+        }
+      ],
+      "executaveis": [],
+      "dlls_externas": [],
+      "needs_estaticos": [],
+      "veredito_estatico": "bloqueado",
+      "notas": [
+        "winrar-x64-720br.exe: ERROR: Unsupported Method : Descript.ion"
+      ]
+    },
+    "7zip": {
+      "nome": "7-Zip",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "7-Zip",
+          "empacotamento": "pasta"
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "7z.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "7zFM.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "7zG.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "comctl32.dll",
+        "comdlg32.dll",
+        "gdi32.dll",
+        "kernel32.dll",
+        "mpr.dll",
+        "msvcrt.dll",
+        "ole32.dll",
+        "oleaut32.dll",
+        "shell32.dll",
+        "user32.dll"
+      ],
+      "needs_estaticos": [],
+      "veredito_estatico": "provavel_base"
+    },
+    "rarlinux": {
+      "nome": "rarlinux",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "angryipscanner": {
+      "nome": "Angry IP Scanner",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "ipscan-3.9.3-setup.exe",
+          "empacotamento": "nsis",
+          "tamanho_mb": 21.1,
+          "sha256": "91D77C63169249E8FCDD2D912963D4D5CD143D87B65352FC62BA8113FB49F9F5",
+          "extraido": true,
+          "aninhados": [
+            {
+              "aninhado": "uninstall.exe",
+              "empacotamento": "nsis",
+              "extraido": true
+            }
+          ]
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "ipscan.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "jre/bin/java.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "jre/bin/javaw.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "jre/bin/keytool.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "comctl32.dll",
+        "iphlpapi.dll",
+        "kernel32.dll",
+        "msvcrt.dll",
+        "mswsock.dll",
+        "powrprof.dll",
+        "secur32.dll",
+        "shell32.dll",
+        "user32.dll",
+        "version.dll",
+        "winhttp.dll",
+        "winmm.dll",
+        "ws2_32.dll"
+      ],
+      "needs_estaticos": [
+        "wow64"
+      ],
+      "veredito_estatico": "provavel_nao_roda",
+      "notas": [
+        "executável principal só em 32 bits; WinPE amd64 não traz WoW64"
+      ]
+    },
+    "wireshark": {
+      "nome": "Wireshark",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "WiresharkPortable64_4.6.4.paf.exe",
+          "empacotamento": "nsis",
+          "tamanho_mb": 91.5,
+          "sha256": "2F144183E24D14C3573053B85E304819A5409399383A3F3F6B2FEAC5E36D1DBB",
+          "extraido": true,
+          "aninhados": [
+            {
+              "aninhado": "WiresharkPortable64.exe",
+              "empacotamento": "nsis",
+              "extraido": true
+            }
+          ]
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "App/Wireshark/Stratoshark.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "App/Wireshark/Wireshark.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "App/Wireshark/capinfos.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "App/Wireshark/captype.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "App/Wireshark/dumpcap.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "App/Wireshark/editcap.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "App/Wireshark/mergecap.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "App/Wireshark/mmdbresolve.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "App/Wireshark/randpkt.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "App/Wireshark/rawshark.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "App/Wireshark/reordercap.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "App/Wireshark/sharkd.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "App/Wireshark/strato.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "App/Wireshark/test_epan.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "App/Wireshark/test_wsutil.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "App/Wireshark/text2pcap.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "App/Wireshark/tshark.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "App/Wireshark/extcap/androiddump.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "App/Wireshark/extcap/ciscodump.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "App/Wireshark/extcap/etwdump.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "App/Wireshark/extcap/randpktdump.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "App/Wireshark/extcap/sshdump.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "App/Wireshark/extcap/udpdump.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "App/Wireshark/extcap/wifidump.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "authz.dll",
+        "avrt.dll",
+        "bcrypt.dll",
+        "comctl32.dll",
+        "comdlg32.dll",
+        "crypt32.dll",
+        "d3d11.dll",
+        "d3d12.dll",
+        "d3d9.dll",
+        "dnsapi.dll",
+        "dwmapi.dll",
+        "dwrite.dll",
+        "dxgi.dll",
+        "dxva2.dll",
+        "evr.dll",
+        "gdi32.dll",
+        "imagehlp.dll",
+        "imm32.dll",
+        "iphlpapi.dll",
+        "kernel32.dll",
+        "mf.dll",
+        "mfplat.dll",
+        "mfreadwrite.dll",
+        "mpr.dll",
+        "msimg32.dll",
+        "msvcrt.dll",
+        "ncrypt.dll",
+        "netapi32.dll",
+        "ole32.dll",
+        "oleaut32.dll",
+        "propsys.dll",
+        "psapi.dll",
+        "rpcrt4.dll",
+        "secur32.dll",
+        "setupapi.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "tdh.dll",
+        "uiautomationcore.dll",
+        "user32.dll",
+        "userenv.dll",
+        "uxtheme.dll",
+        "version.dll",
+        "wevtapi.dll",
+        "winhttp.dll",
+        "wininet.dll",
+        "winmm.dll",
+        "winspool.drv",
+        "ws2_32.dll",
+        "wtsapi32.dll"
+      ],
+      "needs_estaticos": [],
+      "veredito_estatico": "provavel_base"
+    },
+    "nmap": {
+      "nome": "Nmap",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "nmap-7.99-setup.exe",
+          "empacotamento": "nsis",
+          "tamanho_mb": 35.2,
+          "sha256": "FDA839F35D9F8F18A11670E17D0332CE9D05A3556C5A20E91B0B56C57774F611",
+          "extraido": true,
+          "aninhados": [
+            {
+              "aninhado": "$PLUGINSDIR/npcap-1.87.exe",
+              "empacotamento": "nsis",
+              "extraido": true
+            },
+            {
+              "aninhado": "$PLUGINSDIR/vc_redist.x86.exe",
+              "empacotamento": "sfx",
+              "extraido": true
+            },
+            {
+              "aninhado": "Uninstall.exe",
+              "empacotamento": "nsis",
+              "extraido": true
+            }
+          ]
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "ncat.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "nmap.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "nping.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "zenmap/bin/python.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "zenmap/bin/pythonw.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "bcrypt.dll",
+        "comctl32.dll",
+        "comdlg32.dll",
+        "crypt32.dll",
+        "dnsapi.dll",
+        "dwmapi.dll",
+        "dwrite.dll",
+        "gdi32.dll",
+        "gdiplus.dll",
+        "hid.dll",
+        "imm32.dll",
+        "iphlpapi.dll",
+        "kernel32.dll",
+        "msimg32.dll",
+        "msvcp140.dll",
+        "msvcrt.dll",
+        "ole32.dll",
+        "opengl32.dll",
+        "rpcrt4.dll",
+        "setupapi.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "user32.dll",
+        "usp10.dll",
+        "vcruntime140.dll",
+        "version.dll",
+        "winmm.dll",
+        "winspool.drv",
+        "ws2_32.dll"
+      ],
+      "needs_estaticos": [
+        "wow64"
+      ],
+      "veredito_estatico": "provavel_nao_roda",
+      "notas": [
+        "executável principal só em 32 bits; WinPE amd64 não traz WoW64",
+        "instalador embute driver de kernel (1 arquivo(s)), ex.: $PLUGINSDIR/npcap-1.87.exe.extraido/npcap.sys"
+      ]
+    },
+    "radminvpn": {
+      "nome": "Radmin VPN",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "Radmin_VPN_1.4.4642.1.exe",
+          "empacotamento": "inno",
+          "inno": "5.5.0",
+          "tamanho_mb": 20.8,
+          "sha256": "8CA04D27EF8C28E0EDAC3B740EBE7FB8839B4794752A0D359AE18DE22FC6BE35",
+          "extraido": true,
+          "aninhados": [
+            {
+              "aninhado": "tmp/RadminVPN_1.4.4642.1.msi",
+              "empacotamento": "msi",
+              "extraido": true
+            }
+          ]
+        }
+      ],
+      "executaveis": [],
+      "dlls_externas": [],
+      "needs_estaticos": [],
+      "veredito_estatico": "sem_pe_analisavel",
+      "notas": [
+        "instalador embute driver de kernel (2 arquivo(s)), ex.: tmp/RadminVPN_1.4.4642.1.msi.extraido/Radmin VPN/Driver.1.0/RvNetMP60.sys"
+      ]
+    },
+    "ghidra": {
+      "nome": "Ghidra",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "ghidra_12.0.4_PUBLIC_20260303.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 486.3,
+          "sha256": "DFDD0198E23B53AF5385D6A384ADCCFC8A3697C918292EA879DB94EB04E4BF6F",
+          "extraido": "parcial",
+          "erro": "ERROR: Data Error : ghidra_12.0.4_PUBLIC/Ghidra/Features/Jython/lib/jython-standalone-2.7.4.jar",
+          "aninhados": [
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Extensions/Eclipse/GhidraDev/GhidraDev-5.0.1.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Extensions/Eclipse/GhidraSleighEditor/GhidraSleighEditor-1.0.2.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Extensions/Ghidra/ghidra_12.0.4_PUBLIC_20260303_BSimElasticPlugin.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Extensions/Ghidra/ghidra_12.0.4_PUBLIC_20260303_GnuDisassembler.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Extensions/Ghidra/ghidra_12.0.4_PUBLIC_20260303_Lisa.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Extensions/Ghidra/ghidra_12.0.4_PUBLIC_20260303_MachineLearning.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Extensions/Ghidra/ghidra_12.0.4_PUBLIC_20260303_SampleTablePlugin.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Extensions/Ghidra/ghidra_12.0.4_PUBLIC_20260303_SleighDevTools.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Extensions/Ghidra/ghidra_12.0.4_PUBLIC_20260303_SymbolicSummaryZ3.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Extensions/Ghidra/ghidra_12.0.4_PUBLIC_20260303_bundle_examples.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Extensions/Ghidra/ghidra_12.0.4_PUBLIC_20260303_sample.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/GPL/DMG/data/lib/hfsexplorer-0_21-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Debug/AnnotationValidator/lib/AnnotationValidator-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Debug/Debugger/lib/Debugger-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Debug/Debugger-api/lib/Debugger-api-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Debug/Debugger-isf/lib/Debugger-isf-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Debug/Debugger-jpda/lib/Debugger-jpda-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/lib/Debugger-rmi-trace-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Debug/Framework-TraceModeling/lib/Framework-TraceModeling-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Debug/ProposedUtils/lib/ProposedUtils-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Debug/TaintAnalysis/lib/TaintAnalysis-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/BSim/lib/BSim-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/BSimFeatureVisualizer/lib/BSimFeatureVisualizer-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/Base/lib/Base-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/BytePatterns/lib/BytePatterns-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/ByteViewer/lib/ByteViewer-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/CodeCompare/lib/CodeCompare-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/DataGraph/lib/DataGraph-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/DebugUtils/lib/DebugUtils-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/Decompiler/lib/Decompiler-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/DecompilerDependent/lib/DecompilerDependent-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/FileFormats/lib/FileFormats-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/FunctionGraph/lib/FunctionGraph-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/FunctionGraphDecompilerExtension/lib/FunctionGraphDecompilerExtension-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/FunctionID/lib/FunctionID-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/GhidraGo/lib/GhidraGo-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/GhidraServer/lib/GhidraServer-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/GnuDemangler/lib/GnuDemangler-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/GraphFunctionCalls/lib/GraphFunctionCalls-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/GraphServices/lib/GraphServices-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/Jython/lib/Jython-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/lib/MicrosoftCodeAnalyzer-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/MicrosoftDemangler/lib/MicrosoftDemangler-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/MicrosoftDmang/lib/MicrosoftDmang-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/PDB/lib/PDB-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/ProgramDiff/lib/ProgramDiff-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/ProgramGraph/lib/ProgramGraph-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/PyGhidra/lib/PyGhidra-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/Recognizers/lib/Recognizers-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/Sarif/lib/Sarif-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/SourceCodeLookup/lib/SourceCodeLookup-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/SwiftDemangler/lib/SwiftDemangler-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/SystemEmulation/lib/SystemEmulation-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/VersionTracking/lib/VersionTracking-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/VersionTrackingBSim/lib/VersionTrackingBSim-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Features/WildcardAssembler/lib/WildcardAssembler-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Framework/DB/lib/DB-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Framework/Docking/lib/Docking-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Framework/Emulation/lib/Emulation-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Framework/FileSystem/lib/FileSystem-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Framework/Graph/lib/Graph-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Framework/Gui/lib/Gui-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Framework/Help/lib/Help-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Framework/Project/lib/Project-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Framework/Pty/lib/Pty-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Framework/SoftwareModeling/lib/SoftwareModeling-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Framework/Utility/lib/Utility-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Processors/68000/lib/68000-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Processors/AARCH64/lib/AARCH64-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Processors/ARM/lib/ARM-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Processors/Atmel/lib/Atmel-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Processors/DATA/lib/DATA-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Processors/Dalvik/lib/Dalvik-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Processors/HCS12/lib/HCS12-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Processors/JVM/lib/JVM-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Processors/Loongarch/lib/Loongarch-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Processors/MIPS/lib/MIPS-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Processors/NDS32/lib/NDS32-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Processors/PIC/lib/PIC-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Processors/PowerPC/lib/PowerPC-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Processors/RISCV/lib/RISCV-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Processors/Sparc/lib/Sparc-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Processors/SuperH4/lib/SuperH4-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Processors/TI_MSP430/lib/TI_MSP430-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Processors/Xtensa/lib/Xtensa-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Processors/eBPF/lib/eBPF-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Processors/tricore/lib/tricore-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/Ghidra/Processors/x86/lib/x86-src.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            },
+            {
+              "aninhado": "ghidra_12.0.4_PUBLIC/docs/GhidraAPI_javadoc.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            }
+          ],
+          "integridade": "corrompido"
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "ghidra_12.0.4_PUBLIC/GPL/DemanglerGnu/os/win_x86_64/demangler_gnu_v2_24.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "ghidra_12.0.4_PUBLIC/GPL/DemanglerGnu/os/win_x86_64/demangler_gnu_v2_41.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "ghidra_12.0.4_PUBLIC/docs/GhidraClass/ExerciseFiles/VersionTracking/WallaceSrc.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "ghidra_12.0.4_PUBLIC/docs/GhidraClass/ExerciseFiles/VersionTracking/WallaceVersion2.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "ghidra_12.0.4_PUBLIC/docs/GhidraClass/ExerciseFiles/WinhelloCPP/WinHelloCPP.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "ghidra_12.0.4_PUBLIC/GPL/DMG/data/lib/hfsexplorer-0_21-src.zip.extraido/dist/hfsexplorer.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "ghidra_12.0.4_PUBLIC/Ghidra/Features/Decompiler/os/win_x86_64/decompile.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "ghidra_12.0.4_PUBLIC/Ghidra/Features/Decompiler/os/win_x86_64/sleigh.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "ghidra_12.0.4_PUBLIC/Ghidra/Features/FileFormats/os/win_x86_64/lzfse.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "ghidra_12.0.4_PUBLIC/Ghidra/Features/Jython/data/jython-2.7.4/Lib/distutils/command/wininst-6.0.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "ghidra_12.0.4_PUBLIC/Ghidra/Features/Jython/data/jython-2.7.4/Lib/distutils/command/wininst-7.1.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "ghidra_12.0.4_PUBLIC/Ghidra/Features/Jython/data/jython-2.7.4/Lib/distutils/command/wininst-8.0.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "ghidra_12.0.4_PUBLIC/Ghidra/Features/Jython/data/jython-2.7.4/Lib/distutils/command/wininst-9.0-amd64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "ghidra_12.0.4_PUBLIC/Ghidra/Features/Jython/data/jython-2.7.4/Lib/distutils/command/wininst-9.0.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "ghidra_12.0.4_PUBLIC/Ghidra/Features/PDB/os/win_x86_64/pdb.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "comctl32.dll",
+        "gdi32.dll",
+        "kernel32.dll",
+        "msvcp140.dll",
+        "msvcr100d.dll",
+        "msvcr71.dll",
+        "msvcr80.dll",
+        "msvcrt.dll",
+        "ole32.dll",
+        "oleaut32.dll",
+        "shell32.dll",
+        "user32.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ],
+      "needs_estaticos": [
+        "java"
+      ],
+      "veredito_estatico": "precisa_runtime",
+      "notas": [
+        "pacote traz variantes 32 e 64 bits; usar a de 64",
+        "arquivo corrompido (CRC), baixar de novo: ghidra_12.0.4_PUBLIC_20260303.zip"
+      ]
+    },
+    "x64dbg": {
+      "nome": "x64dbg",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "x64dbg.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 30.8,
+          "sha256": "CC614CAF34F9FE1EC156F045129DB3A513C35593FF1EE647BC819A352DC12271",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "release/x96dbg.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "release/x32/loaddll.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "release/x32/x32dbg-unsigned.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "release/x32/x32dbg.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "release/x64/loaddll.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "release/x64/x64dbg-unsigned.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "release/x64/x64dbg.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "comctl32.dll",
+        "comdlg32.dll",
+        "dwmapi.dll",
+        "gdi32.dll",
+        "imagehlp.dll",
+        "imm32.dll",
+        "iphlpapi.dll",
+        "kernel32.dll",
+        "mpr.dll",
+        "msvcrt.dll",
+        "netapi32.dll",
+        "ntdll.dll",
+        "ole32.dll",
+        "oleaut32.dll",
+        "psapi.dll",
+        "rpcrt4.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "user32.dll",
+        "userenv.dll",
+        "uxtheme.dll",
+        "version.dll",
+        "wininet.dll",
+        "winmm.dll",
+        "wintrust.dll",
+        "ws2_32.dll",
+        "wtsapi32.dll"
+      ],
+      "needs_estaticos": [],
+      "veredito_estatico": "provavel_base",
+      "notas": [
+        "principal da raiz é 32 bits, mas há executáveis 64 bits em subpasta: release/x64/loaddll.exe, release/x64/x64dbg-unsigned.exe, release/x64/x64dbg.exe"
+      ]
+    },
+    "dependencywalker": {
+      "nome": "Dependency Walker",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "depends22_x64.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 0.7,
+          "sha256": "DC74A98C8A5EE73F68F7CE28AF3F234C029683A52CC13975E321A50E8D7A92E7",
+          "extraido": true
+        },
+        {
+          "arquivo": "depends22_x86.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 0.6,
+          "sha256": "03D73ABBA0E856C81BA994505373FDB94A13B84EB29E6C268BE1BF21B7417CA3",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "depends.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "depends.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "comctl32.dll",
+        "comdlg32.dll",
+        "gdi32.dll",
+        "kernel32.dll",
+        "mfc42.dll",
+        "msvcrt.dll",
+        "oleaut32.dll",
+        "shell32.dll",
+        "user32.dll",
+        "winspool.drv"
+      ],
+      "needs_estaticos": [],
+      "veredito_estatico": "provavel_base",
+      "notas": [
+        "pacote traz variantes 32 e 64 bits; usar a de 64"
+      ]
+    },
+    "detectiteasy": {
+      "nome": "Detect It Easy",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "die_win64_portable_3.21_x64.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 24.0,
+          "sha256": "078F2934F267392247F9C7B759A1C2457A48BC2000B25B80C2F129955EE4A3B9",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "die/die.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "die/diec.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "die/diel.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "bcrypt.dll",
+        "crypt32.dll",
+        "d3d11.dll",
+        "dnsapi.dll",
+        "dwmapi.dll",
+        "dxgi.dll",
+        "gdi32.dll",
+        "imm32.dll",
+        "iphlpapi.dll",
+        "kernel32.dll",
+        "mpr.dll",
+        "msvcr100.dll",
+        "netapi32.dll",
+        "ole32.dll",
+        "oleaut32.dll",
+        "shell32.dll",
+        "user32.dll",
+        "userenv.dll",
+        "uxtheme.dll",
+        "version.dll",
+        "winmm.dll",
+        "wintrust.dll",
+        "ws2_32.dll",
+        "wtsapi32.dll"
+      ],
+      "needs_estaticos": [],
+      "veredito_estatico": "provavel_base"
+    },
+    "pebear": {
+      "nome": "PE-bear",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "PE-bear_0.7.1_qt5_x64_win_vs19.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 9.5,
+          "sha256": "B46EF7F2ADB91653139F48D0824D0F70416BF391B93F1EE590312999B94F044D",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "PE-bear.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "d3d11.dll",
+        "dwmapi.dll",
+        "dxgi.dll",
+        "gdi32.dll",
+        "imm32.dll",
+        "kernel32.dll",
+        "mpr.dll",
+        "msvcp140.dll",
+        "msvcp140_1.dll",
+        "netapi32.dll",
+        "ole32.dll",
+        "oleaut32.dll",
+        "shell32.dll",
+        "user32.dll",
+        "userenv.dll",
+        "uxtheme.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll",
+        "version.dll",
+        "winmm.dll",
+        "ws2_32.dll",
+        "wtsapi32.dll"
+      ],
+      "needs_estaticos": [],
+      "veredito_estatico": "provavel_base"
+    },
+    "hxd": {
+      "nome": "HxD",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "HxDSetup.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 3.2,
+          "sha256": "5065041C7B03C24B9533A5B32B33DB58F2B4924CD84BED41834FF2DB51C1CB7C",
+          "extraido": true,
+          "aninhados": [
+            {
+              "aninhado": "HxDSetup.exe",
+              "empacotamento": "inno",
+              "extraido": true
+            }
+          ]
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "HxDSetup.exe.extraido/app/HxD.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "HxDSetup.exe.extraido/app/HxD32.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "HxDSetup.exe.extraido/app/HxD64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "comctl32.dll",
+        "comdlg32.dll",
+        "dwmapi.dll",
+        "gdi32.dll",
+        "imm32.dll",
+        "kernel32.dll",
+        "msimg32.dll",
+        "msvcrt.dll",
+        "ntdll.dll",
+        "ole32.dll",
+        "oleacc.dll",
+        "oleaut32.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "user32.dll",
+        "uxtheme.dll",
+        "version.dll",
+        "windowscodecs.dll",
+        "wininet.dll",
+        "winmm.dll",
+        "winspool.drv",
+        "wtsapi32.dll"
+      ],
+      "needs_estaticos": [],
+      "veredito_estatico": "provavel_base",
+      "notas": [
+        "pacote traz variantes 32 e 64 bits; usar a de 64"
+      ]
+    },
+    "objdump": {
+      "nome": "objDump",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "gdb": {
+      "nome": "gdb",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "nasm": {
+      "nome": "nasm",
+      "triagem": "pendente",
+      "motivo": "sem binário em FERRAMENTAS"
+    },
+    "volatility3": {
+      "nome": "volatility3",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "volatility3-develop.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 1.5,
+          "sha256": "11CA55A29E94D2FED710CCD3D27CD6E1BAE83DC808142E172FD0326D43472E10",
+          "extraido": true
+        }
+      ],
+      "executaveis": [],
+      "dlls_externas": [],
+      "needs_estaticos": [
+        "python"
+      ],
+      "veredito_estatico": "precisa_runtime"
+    },
+    "metasploit": {
+      "nome": "Metasploit",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "metasploitframework-latest.msi",
+          "empacotamento": "msi",
+          "tamanho_mb": 368.2,
+          "sha256": "14D09B13B43D654432C742C8207A8BEA3D142B50EF77E2EADAF5C66B8C882C1D",
+          "extraido": true,
+          "aninhados": [
+            {
+              "aninhado": "metasploit-framework.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            }
+          ]
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/clusterdb.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/createdb.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/createuser.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/dropdb.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/dropuser.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/ecpg.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/initdb.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/isolationtester.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/oid2name.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_archivecleanup.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_basebackup.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_checksums.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_config.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_controldata.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_ctl.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_dump.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_dumpall.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_isolation_regress.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_isready.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_receivewal.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_recvlogical.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_regress.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_regress_ecpg.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_resetwal.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_restore.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_rewind.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_standby.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_test_fsync.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_test_timing.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_upgrade.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_verifybackup.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pg_waldump.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/pgbench.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/postgres.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/psql.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/reindexdb.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/ruby.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/rubyw.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/stackbuilder.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/vacuumdb.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/vacuumlo.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/bin/zic.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/framework/data/cmd_exec/show_args.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/framework/data/evasion/windows/process_herpaderping/ProcessHerpaderpingTemplate_x64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/framework/data/evasion/windows/process_herpaderping/ProcessHerpaderpingTemplate_x86.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/framework/data/evasion/windows/process_herpaderping/ProcessHerpaderping_x64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/framework/data/evasion/windows/process_herpaderping/ProcessHerpaderping_x86.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/framework/data/exploits/CVE-2018-0824/UnmarshalPwn.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/framework/data/exploits/CVE-2018-8120/CVE-2018-8120x64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        },
+        {
+          "exe": "metasploit-framework.zip.extraido/embedded/framework/data/exploits/CVE-2018-8120/CVE-2018-8120x86.exe",
+          "arquitetura": "i386",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": false
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "bcrypt.dll",
+        "cldapi.dll",
+        "clfsw32.dll",
+        "comctl32.dll",
+        "comdlg32.dll",
+        "crypt32.dll",
+        "dbgeng.dll",
+        "gdi32.dll",
+        "imagehlp.dll",
+        "iphlpapi.dll",
+        "kernel32.dll",
+        "ksproxy.ax",
+        "libreadline8.dll",
+        "mpr.dll",
+        "mscoree.dll",
+        "msimg32.dll",
+        "msvcp140.dll",
+        "msvcp140d.dll",
+        "msvcr80.dll",
+        "msvcr90.dll",
+        "msvcrt.dll",
+        "netapi32.dll",
+        "newdev.dll",
+        "normaliz.dll",
+        "ntdll.dll",
+        "ntoskrnl.exe",
+        "ole32.dll",
+        "oleacc.dll",
+        "oleaut32.dll",
+        "pdh.dll",
+        "perl526.dll",
+        "psapi.dll",
+        "python37.dll",
+        "rpcrt4.dll",
+        "secur32.dll",
+        "setupapi.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "tcl86t.dll",
+        "ucrtbased.dll",
+        "user32.dll",
+        "userenv.dll",
+        "uxtheme.dll",
+        "vcruntime140.dll",
+        "vcruntime140d.dll",
+        "version.dll",
+        "wininet.dll",
+        "winmm.dll",
+        "winspool.drv",
+        "wldap32.dll",
+        "ws2_32.dll",
+        "wsock32.dll",
+        "wxbase313ud_vc_x64_custom.dll",
+        "wxbase313ud_xml_vc_x64_custom.dll",
+        "wxmsw313ud_core_vc_x64_custom.dll",
+        "xpsprint.dll"
+      ],
+      "needs_estaticos": [
+        "powershell"
+      ],
+      "veredito_estatico": "provavel_com_componente",
+      "executaveis_total": 83,
+      "notas": [
+        "auxiliares .NET (não bloqueiam a ferramenta): cloudFilterEOP.exe, SharpHound.exe"
+      ]
+    },
+    "burpsuite": {
+      "nome": "Burp Suite",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "burpsuite_community_windows-x64_v2026_3_3.exe",
+          "empacotamento": "instalador_opaco",
+          "tamanho_mb": 383.2,
+          "sha256": "1B809C62D1A3B3F8F49E1CB8AC5EF404324FE446DE829D9F70B65ABA7E8573A2"
+        }
+      ],
+      "executaveis": [],
+      "dlls_externas": [],
+      "needs_estaticos": [],
+      "veredito_estatico": "bloqueado",
+      "notas": [
+        "instalador não extraível estaticamente"
+      ]
+    },
+    "owaspzap": {
+      "nome": "OWASP ZAP",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "ZAP_2_17_0_windows.exe",
+          "empacotamento": "instalador_opaco",
+          "tamanho_mb": 244.2,
+          "sha256": "EBDAF6F00FFD9C21891D29360196E13A14091F84DDE2BFA1E0B61213A93BC5CA"
+        }
+      ],
+      "executaveis": [],
+      "dlls_externas": [],
+      "needs_estaticos": [],
+      "veredito_estatico": "bloqueado",
+      "notas": [
+        "instalador não extraível estaticamente"
+      ]
+    },
+    "beef": {
+      "nome": "BeEF",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "hashcat": {
+      "nome": "Hashcat",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "hashcat-7.1.2.tar.gz",
+          "empacotamento": "tar_gz",
+          "tamanho_mb": 18.2,
+          "sha256": "530C45CC4CE15EF7D0170DB8FBC9BC6B94F7A23A406E4BD84602854927D9A476",
+          "extraido": true
+        }
+      ],
+      "executaveis": [],
+      "dlls_externas": [],
+      "needs_estaticos": [
+        "powershell",
+        "python"
+      ],
+      "veredito_estatico": "precisa_runtime"
+    },
+    "johntheripper": {
+      "nome": "John the Ripper",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "john-1.9.0-jumbo-1-win64.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 62.3,
+          "sha256": "7D59EA68D39A30A4988C9EB751A57D37D3FD90150CEEB6EE9AFC2A76D13DAA16",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/base64conv.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/bitlocker2john.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/calc_stat.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/cprepair.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/dmg2john.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/genmkvpwd.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/gpg2john.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/hccap2john.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/john-avx-non-omp.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/john-avx.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/john-avx2-non-omp.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/john-sse2-non-omp.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/john-sse2.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/john-sse41-non-omp.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/john-sse41.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/john-xop-non-omp.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/john-xop.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/john.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/keepass2john.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/mkvcalcproba.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/putty2john.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/racf2john.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/rar2john.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/raw2dyna.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/tgtsnarf.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/uaf2john.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/unafs.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/undrop.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/unique.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/unshadow.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/wpapcap2john.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "john-1.9.0-jumbo-1-win64/run/zip2john.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "kernel32.dll",
+        "ntdll.dll"
+      ],
+      "needs_estaticos": [],
+      "veredito_estatico": "provavel_base"
+    },
+    "sherlock": {
+      "nome": "Sherlock",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "sherlock-master.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 0.6,
+          "sha256": "91659F7552E14EFAA13CEBFA3C16248B0146BA05A57BDA82D2866E1B50F9DD9A",
+          "extraido": true
+        }
+      ],
+      "executaveis": [],
+      "dlls_externas": [],
+      "needs_estaticos": [
+        "python"
+      ],
+      "veredito_estatico": "precisa_runtime"
+    },
+    "lynis": {
+      "nome": "Lynis",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "rkhunter": {
+      "nome": "rkhunter",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "rockyoutxt": {
+      "nome": "rockyou.txt",
+      "triagem": "descartado",
+      "motivo": "recurso (documentação/wordlist, não executa)"
+    },
+    "virtualbox": {
+      "nome": "VirtualBox",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "VirtualBox-7.2.8-173730-Win.exe",
+          "empacotamento": "instalador_opaco",
+          "tamanho_mb": 169.6,
+          "sha256": "B1FF7AB5FA51BB0E5F41AE817D5BB17A4B17D9D529BC54618FFE34D98EBE2BBE"
+        }
+      ],
+      "executaveis": [],
+      "dlls_externas": [],
+      "needs_estaticos": [],
+      "veredito_estatico": "bloqueado",
+      "notas": [
+        "instalador não extraível estaticamente"
+      ]
+    },
+    "projectnomad": {
+      "nome": "Project N.O.M.A.D.",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "bitwarden": {
+      "nome": "Bitwarden",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "Bitwarden-Installer-2026.3.1.exe",
+          "empacotamento": "nsis",
+          "tamanho_mb": 0.7,
+          "sha256": "A4261DC516FD8157CAD5313B33870E891B35742B8696952834EFB64979E2CD91",
+          "extraido": true,
+          "aninhados": [
+            {
+              "aninhado": "$R0/Uninstall Bitwarden.exe",
+              "empacotamento": "nsis",
+              "extraido": true
+            }
+          ]
+        }
+      ],
+      "executaveis": [],
+      "dlls_externas": [],
+      "needs_estaticos": [],
+      "veredito_estatico": "sem_pe_analisavel"
+    },
+    "keepassxc": {
+      "nome": "KeePassXC",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "KeePassXC-2.7.12-Win64.msi",
+          "empacotamento": "msi",
+          "tamanho_mb": 34.2,
+          "sha256": "FEEE096C1D5D0D7BB7B36B18174818F7BAC889BE7668C550FF0E5EF9206EA9A5",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "KeePassXC/KeePassXC.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "KeePassXC/keepassxc-cli.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "KeePassXC/keepassxc-proxy.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "crypt32.dll",
+        "d3d11.dll",
+        "dnsapi.dll",
+        "dwmapi.dll",
+        "dxgi.dll",
+        "gdi32.dll",
+        "hid.dll",
+        "imm32.dll",
+        "iphlpapi.dll",
+        "kernel32.dll",
+        "mpr.dll",
+        "msvcp140.dll",
+        "msvcp140_1.dll",
+        "netapi32.dll",
+        "ole32.dll",
+        "oleaut32.dll",
+        "setupapi.dll",
+        "shell32.dll",
+        "user32.dll",
+        "userenv.dll",
+        "uxtheme.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll",
+        "version.dll",
+        "winmm.dll",
+        "winscard.dll",
+        "ws2_32.dll",
+        "wtsapi32.dll"
+      ],
+      "needs_estaticos": [],
+      "veredito_estatico": "provavel_base"
+    },
+    "dupeguru": {
+      "nome": "dupeGuru",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "dupeGuru_win64_4.3.1.exe",
+          "empacotamento": "nsis",
+          "tamanho_mb": 30.9,
+          "sha256": "28293DADA3C88336B2B53ACA00ADF59F85CABF1362F8386A8FFC6BE5E1742836",
+          "extraido": true,
+          "aninhados": [
+            {
+              "aninhado": "Uninstall.exe",
+              "empacotamento": "nsis",
+              "extraido": true
+            },
+            {
+              "aninhado": "base_library.zip",
+              "empacotamento": "zip",
+              "extraido": true
+            }
+          ]
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "dupeguru-win64.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "bcrypt.dll",
+        "comctl32.dll",
+        "concrt140.dll",
+        "crypt32.dll",
+        "d3d11.dll",
+        "d3d9.dll",
+        "dnsapi.dll",
+        "dwmapi.dll",
+        "dxgi.dll",
+        "gdi32.dll",
+        "gdiplus.dll",
+        "imagehlp.dll",
+        "imm32.dll",
+        "iphlpapi.dll",
+        "kernel32.dll",
+        "mpr.dll",
+        "msimg32.dll",
+        "msvcrt.dll",
+        "netapi32.dll",
+        "odbc32.dll",
+        "ole32.dll",
+        "oleacc.dll",
+        "oleaut32.dll",
+        "oledlg.dll",
+        "rpcrt4.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "urlmon.dll",
+        "user32.dll",
+        "userenv.dll",
+        "uxtheme.dll",
+        "version.dll",
+        "wininet.dll",
+        "winmm.dll",
+        "winspool.drv",
+        "ws2_32.dll",
+        "wtsapi32.dll"
+      ],
+      "needs_estaticos": [],
+      "veredito_estatico": "provavel_base"
+    },
+    "geekuninstaller": {
+      "nome": "Geek Uninstaller",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "geek.zip",
+          "empacotamento": "zip",
+          "tamanho_mb": 2.8,
+          "sha256": "3706C440557692C612527C0EB437577EF2DAE8A1CA947DD2BC259B451E192F42",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "geek.exe",
+          "arquitetura": "i386",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "comctl32.dll",
+        "gdi32.dll",
+        "gdiplus.dll",
+        "kernel32.dll",
+        "msimg32.dll",
+        "ole32.dll",
+        "oleacc.dll",
+        "oleaut32.dll",
+        "oledlg.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "user32.dll",
+        "uxtheme.dll",
+        "version.dll",
+        "wininet.dll",
+        "winmm.dll",
+        "winspool.drv"
+      ],
+      "needs_estaticos": [
+        "wow64"
+      ],
+      "veredito_estatico": "provavel_nao_roda",
+      "notas": [
+        "executável principal só em 32 bits; WinPE amd64 não traz WoW64"
+      ]
+    },
+    "memwipe": {
+      "nome": "MemWipe",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "MemWipe.exe",
+          "empacotamento": "executavel",
+          "tamanho_mb": 0.1,
+          "sha256": "30470755523A5A5049C44E04B7823B0D50E44D2CA798E2B23936615BF63C0BFA"
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "MemWipe.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": true,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [],
+      "needs_estaticos": [
+        "dotnet"
+      ],
+      "veredito_estatico": "provavel_com_componente"
+    },
+    "vlc": {
+      "nome": "VLC",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "vlc-3.0.23-win64.exe",
+          "empacotamento": "nsis",
+          "tamanho_mb": 43.8,
+          "sha256": "20AD191348684B470DDC4E05204316F3D8E39655F412B3E392A0EEF97639DAAF",
+          "extraido": true
+        }
+      ],
+      "executaveis": [
+        {
+          "exe": "vlc-cache-gen.exe",
+          "arquitetura": "amd64",
+          "subsistema": "console",
+          "dotnet": false,
+          "principal": true
+        },
+        {
+          "exe": "vlc.exe",
+          "arquitetura": "amd64",
+          "subsistema": "gui",
+          "dotnet": false,
+          "principal": true
+        }
+      ],
+      "dlls_externas": [
+        "advapi32.dll",
+        "comctl32.dll",
+        "crypt32.dll",
+        "dsound.dll",
+        "gdi32.dll",
+        "imm32.dll",
+        "iphlpapi.dll",
+        "kernel32.dll",
+        "mpr.dll",
+        "msimg32.dll",
+        "msvcrt.dll",
+        "netapi32.dll",
+        "ole32.dll",
+        "oleaut32.dll",
+        "opengl32.dll",
+        "shell32.dll",
+        "shlwapi.dll",
+        "user32.dll",
+        "usp10.dll",
+        "wininet.dll",
+        "winmm.dll",
+        "winscard.dll",
+        "ws2_32.dll",
+        "wsock32.dll",
+        "xmllite.dll"
+      ],
+      "needs_estaticos": [],
+      "veredito_estatico": "provavel_base"
+    },
+    "cudatoolkit": {
+      "nome": "CUDA Toolkit",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "cuda_13.3.0_windows.exe",
+          "empacotamento": "sfx",
+          "tamanho_mb": 2394.3,
+          "sha256": "94E52F3513204D0F2EAE080B5AAAA70113F43988825BF08D708F2062F643B1F8",
+          "extraido": false,
+          "erro": "acima do limite de extração"
+        }
+      ],
+      "executaveis": [],
+      "dlls_externas": [],
+      "needs_estaticos": [],
+      "veredito_estatico": "bloqueado",
+      "notas": [
+        "cuda_13.3.0_windows.exe: acima do limite de extração"
+      ]
+    },
+    "git": {
+      "nome": "Git",
+      "triagem": "candidato",
+      "arquivos": [
+        {
+          "arquivo": "Git-2.48.1-64-bit.exe",
+          "empacotamento": "inno_nao_suportado",
+          "inno": "6.3.0",
+          "tamanho_mb": 66.3,
+          "sha256": "CE45E23275049F4B36EDD90D5FD986A1E230EFB6C511E9260A90176CE8E825DF"
+        }
+      ],
+      "executaveis": [],
+      "dlls_externas": [],
+      "needs_estaticos": [],
+      "veredito_estatico": "bloqueado",
+      "notas": [
+        "Inno Setup 6.3.0 não suportado pelo innoextract instalado"
+      ]
+    },
+    "dbeavercommunity": {
+      "nome": "DBeaver Community",
+      "triagem": "pendente",
+      "motivo": "sem binário em FERRAMENTAS"
+    },
+    "insomnia": {
+      "nome": "Insomnia",
+      "triagem": "pendente",
+      "motivo": "sem binário em FERRAMENTAS"
+    },
+    "netcat": {
+      "nome": "Netcat (ncat)",
+      "triagem": "pendente",
+      "motivo": "sem binário em FERRAMENTAS"
+    },
+    "tcpdump": {
+      "nome": "tcpdump",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "iperf3": {
+      "nome": "iperf3",
+      "triagem": "pendente",
+      "motivo": "sem binário em FERRAMENTAS"
+    },
+    "mtr": {
+      "nome": "mtr",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "binwalk": {
+      "nome": "binwalk",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "windbg": {
+      "nome": "WinDbg",
+      "triagem": "pendente",
+      "motivo": "sem binário em FERRAMENTAS"
+    },
+    "crash": {
+      "nome": "crash (kdump-utils)",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "manuaisarquitetura": {
+      "nome": "Manuais de Arquitetura (Intel, AMD, ARM)",
+      "triagem": "descartado",
+      "motivo": "recurso (documentação/wordlist, não executa)"
+    },
+    "bugcheckcodereference": {
+      "nome": "Bug Check Code Reference (Windows)",
+      "triagem": "descartado",
+      "motivo": "recurso (documentação/wordlist, não executa)"
+    },
+    "kernelpanicoops": {
+      "nome": "Kernel Panic e Oops (Linux)",
+      "triagem": "descartado",
+      "motivo": "recurso (documentação/wordlist, não executa)"
+    },
+    "paramspider": {
+      "nome": "ParamSpider",
+      "triagem": "pendente",
+      "motivo": "sem binário em FERRAMENTAS"
+    },
+    "ffuf": {
+      "nome": "ffuf",
+      "triagem": "pendente",
+      "motivo": "sem binário em FERRAMENTAS"
+    },
+    "sqlmap": {
+      "nome": "SQLMap",
+      "triagem": "pendente",
+      "motivo": "sem binário em FERRAMENTAS"
+    },
+    "subfinder": {
+      "nome": "subfinder",
+      "triagem": "pendente",
+      "motivo": "sem binário em FERRAMENTAS"
+    },
+    "qemu": {
+      "nome": "QEMU",
+      "triagem": "pendente",
+      "motivo": "sem binário em FERRAMENTAS"
+    },
+    "sandboxieplus": {
+      "nome": "Sandboxie-Plus",
+      "triagem": "pendente",
+      "motivo": "sem binário em FERRAMENTAS"
+    },
+    "hivex": {
+      "nome": "Hivex",
+      "triagem": "descartado",
+      "motivo": "só Linux"
+    },
+    "regripper": {
+      "nome": "RegRipper",
+      "triagem": "pendente",
+      "motivo": "sem binário em FERRAMENTAS"
+    },
+    "sleuthkit": {
+      "nome": "The Sleuth Kit",
+      "triagem": "pendente",
+      "motivo": "sem binário em FERRAMENTAS"
+    }
+  }
+}

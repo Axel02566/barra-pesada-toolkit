@@ -2,6 +2,19 @@
 
 Registro de alterações do BARRA PESADA — Toolkit.
 
+## [1.8] — Setembro/2026
+
+### Adicionado
+- `harness/winpe/bateria.py` — bateria de compatibilidade com WinPE, etapas 1 a 3 (triagem pelo catálogo, identificação e extração de empacotamento, análise estática de PE). Nada é executado; só leitura e extração. Primeiro script do projeto em Python, por depender do `pefile`; roda só do lado Linux.
+- `manifest/bateria_winpe.json` — resultado da primeira rodada sobre as 118 entradas do catálogo, indexado pelo `id`: 19 prováveis no WinPE base, 10 com componente injetado, 10 prováveis não roda (só 32 bits), 5 precisam de runtime, 14 bloqueados, 2 incertos, 3 sem PE analisável, 15 pendentes e 39 descartados.
+
+### Conhecido
+- `ghidra_12.0.4_PUBLIC_20260303.zip` está corrompido (CRC do `jython-standalone-2.7.4.jar` não confere) — baixar de novo.
+- HWiNFO, HWMonitor, CPU-Z, FurMark e Git usam Inno Setup 6.3+, que o `innoextract` 1.9 do Ubuntu não abre; Burp e ZAP são install4j. Trocar por versões portáteis.
+- O catálogo marca MangoHud como `ambos`, mas é só Linux; `hashcat-7.1.2.tar.gz` é código-fonte, não binário Windows.
+
+---
+
 ## [1.7] — Setembro/2026
 
 ### Adicionado
