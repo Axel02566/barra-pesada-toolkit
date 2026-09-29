@@ -1,0 +1,19 @@
+{
+  "nome": "barra-pesada-winpe",
+  "arquitetura": "amd64",
+  "idioma": "en-us",
+  "scratch_mb": 512,
+  "componentes": [
+    "WinPE-WMI",
+    "WinPE-NetFX",
+    "WinPE-Scripting",
+    "WinPE-PowerShell",
+    "WinPE-StorageWMI",
+    "WinPE-DismCmdlets"
+  ],
+  "_notas": [
+    "A ordem dos componentes importa: cada um depende dos anteriores (PowerShell exige WMI, NetFX e Scripting).",
+    "Cada componente entra junto com o pacote de idioma correspondente (WinPE_OCs/<idioma>/<componente>_<idioma>.cab).",
+    "Esta lista é o que o ambiente oferece; quando o modelo de tags for decidido, ela vira o 'provides' do WinPE."
+  ]
+}
