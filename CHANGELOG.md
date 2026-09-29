@@ -2,6 +2,20 @@
 
 Registro de alterações do BARRA PESADA — Toolkit.
 
+## [1.10] — Setembro/2026
+
+### Adicionado
+- Etapa 4 da bateria WinPE (smoke test), ainda não executada — depende da ISO gerada pela receita:
+  - `harness/winpe/smoke.py` — lado Linux: escolhe os executáveis a testar a partir de `bateria_winpe.json`, monta uma imagem FAT32 sem root (`mkfs.fat` + `mtools`), boota o WinPE no QEMU em UEFI e grava o resultado de cada item no campo `smoke` do mesmo JSON.
+  - `harness/winpe/smoke.ps1` — lado WinPE: registra o ambiente (inclusive se há WoW64), roda cada executável com as caixas de erro do Windows suprimidas, classifica o resultado (janela aberta, DLL ausente, formato inválido etc.) e tira captura de tela das ferramentas gráficas.
+- `.gitignore` do projeto (cache do Python).
+
+### Conhecido
+- `\BP_SMOKE\` é nome reservado: se existir numa unidade quando o WinPE boota, ele roda os testes e desliga. Não usar esse nome na partição de dados real.
+- WinUtil não tem executável e fica fora do smoke test.
+
+---
+
 ## [1.9] — Setembro/2026
 
 ### Adicionado
